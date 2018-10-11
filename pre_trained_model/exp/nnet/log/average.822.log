@@ -1,0 +1,7 @@
+# nnet-am-average exp/nnet/823.1.mdl exp/nnet/823.mdl 
+# Started at Sat Sep 29 00:20:50 KST 2018
+#
+nnet-am-average exp/nnet/823.1.mdl exp/nnet/823.mdl 
+LOG (nnet-am-average[5.2.88~1392-cc246]:main():nnet-am-average.cc:252) Averaged parameters of 1 neural nets, and wrote to exp/nnet/823.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Sep 29 00:20:51 KST 2018, elapsed time 0 seconds

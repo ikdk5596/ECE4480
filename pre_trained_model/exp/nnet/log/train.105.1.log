@@ -1,0 +1,90 @@
+# nnet-train-simple --minibatch-size=128 --srand=105 "nnet-am-copy --learning-rate=0.00749894209332456 exp/nnet/105.mdl -|" "ark,bg:nnet-copy-egs --frame=7 ark:exp/nnet/egs/egs.1.ark ark:-|nnet-shuffle-egs --buffer-size=5000 --srand=105 ark:- ark:-|" exp/nnet/106.1.mdl 
+# Started at Fri Sep 28 18:52:08 KST 2018
+#
+nnet-train-simple --minibatch-size=128 --srand=105 'nnet-am-copy --learning-rate=0.00749894209332456 exp/nnet/105.mdl -|' 'ark,bg:nnet-copy-egs --frame=7 ark:exp/nnet/egs/egs.1.ark ark:-|nnet-shuffle-egs --buffer-size=5000 --srand=105 ark:- ark:-|' exp/nnet/106.1.mdl 
+WARNING (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuId():cu-device.cc:182) Suggestion: use 'nvidia-smi -c 3' to set compute exclusive mode
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:300) Selecting from 4 GPUs
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:315) cudaSetDevice(0): TITAN Xp	free:11952M, used:234M, total:12186M, free/total:0.980784
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:315) cudaSetDevice(1): TITAN Xp	free:12017M, used:172M, total:12189M, free/total:0.985813
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:315) cudaSetDevice(2): TITAN Xp	free:12017M, used:172M, total:12189M, free/total:0.985813
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:315) cudaSetDevice(3): TITAN Xp	free:12017M, used:172M, total:12189M, free/total:0.985813
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:364) Trying to select device: 1 (automatically), mem_ratio: 0.985813
+LOG (nnet-train-simple[5.2.88~1392-cc246]:SelectGpuIdAuto():cu-device.cc:383) Success selecting device 1 free mem ratio: 0.985813
+LOG (nnet-train-simple[5.2.88~1392-cc246]:FinalizeActiveGpu():cu-device.cc:225) The active GPU is [1]: TITAN Xp	free:11983M, used:206M, total:12189M, free/total:0.983024 version 6.1
+nnet-am-copy --learning-rate=0.00749894209332456 exp/nnet/105.mdl - 
+LOG (nnet-am-copy[5.2.88~1392-cc246]:SetLearningRates():nnet-nnet.cc:353) Set learning rates to 0.00749894
+LOG (nnet-am-copy[5.2.88~1392-cc246]:main():nnet-am-copy.cc:207) Copied neural net from exp/nnet/105.mdl to -
+nnet-shuffle-egs --buffer-size=5000 --srand=105 ark:- ark:- 
+nnet-copy-egs --frame=7 ark:exp/nnet/egs/egs.1.ark ark:- 
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.991547, for component index 12
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.90508, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25578 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.23019 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.998884, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25489 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22024 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.966922, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2304 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.20949 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.965747, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22849 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.19617 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22089 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21961 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.26188 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.964298, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21235 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.990792, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25124 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2264 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2419 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.991346, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22587 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.966893, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:GetScalingFactor():nnet-component.cc:1861) Limiting step size using scaling factor 0.915251, for component index 9
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22425 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.1879 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.26942 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.20329 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.20354 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22882 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22909 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22057 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.18872 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25287 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.24645 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.23124 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21233 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22841 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22384 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.24964 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21648 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22779 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21539 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21384 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.20031 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22788 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.23609 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.24409 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25213 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.1826 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.22979 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21797 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21003 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.23865 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21112 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.25234 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2003 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.19427 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.24497 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2588 over 6400 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.20346 over 6400 frames.
+LOG (nnet-copy-egs[5.2.88~1392-cc246]:main():nnet-copy-egs.cc:170) Read 351994 neural-network training examples, wrote 349036
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.2248 over 6400 frames.
+LOG (nnet-shuffle-egs[5.2.88~1392-cc246]:main():nnet-shuffle-egs.cc:102) Shuffled order of 349036 neural-network training examples using a buffer (partial randomization)
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:177) Training objective function (this phase) is -1.21993 over 3436 frames.
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:192) Did backprop on 349036 examples, average log-prob per frame is -1.22567
+LOG (nnet-train-simple[5.2.88~1392-cc246]:TrainNnetSimple():train-nnet.cc:195) [this line is to be parsed by a script:] log-prob-per-frame=-1.22567
+LOG (nnet-train-simple[5.2.88~1392-cc246]:main():nnet-train-simple.cc:107) Finished training, processed 349036 training examples.  Wrote model to exp/nnet/106.1.mdl
+# Accounting: time=26 threads=1
+# Ended (code 0) at Fri Sep 28 18:52:34 KST 2018, elapsed time 26 seconds

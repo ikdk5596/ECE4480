@@ -1,0 +1,17 @@
+# nnet-copy-egs --frame=random --srand=5 ark:exp/nnet/egs/egs.1.ark ark:- | nnet-subset-egs --srand=5 --n=10000 ark:- ark:- | nnet-compute-from-egs "nnet-to-raw-nnet exp/nnet/final.mdl -|" ark:- ark:- | matrix-sum-rows ark:- ark:- | vector-sum ark:- exp/nnet/post.840.5.vec 
+# Started at Sat Sep 29 00:32:50 KST 2018
+#
+matrix-sum-rows ark:- ark:- 
+vector-sum ark:- exp/nnet/post.840.5.vec 
+nnet-compute-from-egs 'nnet-to-raw-nnet exp/nnet/final.mdl -|' ark:- ark:- 
+nnet-subset-egs --srand=5 --n=10000 ark:- ark:- 
+nnet-copy-egs --frame=random --srand=5 ark:exp/nnet/egs/egs.1.ark ark:- 
+nnet-to-raw-nnet exp/nnet/final.mdl - 
+LOG (nnet-to-raw-nnet[5.2.88~1392-cc246]:main():nnet-to-raw-nnet.cc:76) Read neural net from exp/nnet/final.mdl and wrote raw neural net to -
+LOG (nnet-copy-egs[5.2.88~1392-cc246]:main():nnet-copy-egs.cc:170) Read 351994 neural-network training examples, wrote 351994
+LOG (nnet-subset-egs[5.2.88~1392-cc246]:main():nnet-subset-egs.cc:92) Selected a subset of 10000 out of 351994 neural-network training examples 
+LOG (nnet-compute-from-egs[5.2.88~1392-cc246]:main():nnet-compute-from-egs.cc:90) Processed 10000 examples.
+LOG (matrix-sum-rows[5.2.88~1392-cc246]:main():matrix-sum-rows.cc:67) Summed rows 10000 matrices, 10000 rows in total.
+LOG (vector-sum[5.2.88~1392-cc246]:TypeTwoUsage():vector-sum.cc:143) Summed 10000 vectors, 0 with errors; wrote sum to exp/nnet/post.840.5.vec
+# Accounting: time=86 threads=1
+# Ended (code 0) at Sat Sep 29 00:34:16 KST 2018, elapsed time 86 seconds

@@ -1,0 +1,4 @@
+ nnet_left_context=9;
+ nnet_right_context=7
+ first_left_context=4;
+ first_right_context=4

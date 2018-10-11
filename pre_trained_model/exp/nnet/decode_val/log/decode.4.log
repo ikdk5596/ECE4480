@@ -1,0 +1,150 @@
+# nnet-latgen-faster --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri3/graph/words.txt exp/nnet/final.mdl exp/tri3/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/val/split6/4/utt2spk scp:data/val/split6/4/cmvn.scp scp:data/val/split6/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/val/split6/4/utt2spk ark:exp/tri3/decode_val/trans.4 ark:- ark:- |" "ark:|gzip -c > exp/nnet/decode_val/lat.4.gz" 
+# Started at Mon Oct  1 04:47:15 KST 2018
+#
+nnet-latgen-faster --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri3/graph/words.txt exp/nnet/final.mdl exp/tri3/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/val/split6/4/utt2spk scp:data/val/split6/4/cmvn.scp scp:data/val/split6/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/val/split6/4/utt2spk ark:exp/tri3/decode_val/trans.4 ark:- ark:- |' 'ark:|gzip -c > exp/nnet/decode_val/lat.4.gz' 
+transform-feats --utt2spk=ark:data/val/split6/4/utt2spk ark:exp/tri3/decode_val/trans.4 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/val/split6/4/utt2spk scp:data/val/split6/4/cmvn.scp scp:data/val/split6/4/feats.scp ark:- 
+transform-feats exp/nnet/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+107_003_0075 ﻿옷이 통화를 하면서 돈을 냉장고에 둔 뒤 문을 세 번 두드리고 보관해 두었지만 한씨 등이 전날 경찰에 잡히면서 피해를 보지는 않았다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0075 is 0.488352 over 1183 frames.
+107_003_0141 그리고 수사를 관련자를 마흔 여섯 명이나 불러서 조사를 했어요 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0141 is 0.48285 over 656 frames.
+107_003_0145 ﻿내 박해상 원장은 겨드랑이 털은 특별한 기능이 없다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0145 is 0.388212 over 773 frames.
+107_003_0220 이사 삼 선 도전에 대해서는 적절한 시점에 너무 늦지 않게 말씀 드릴 것이라며 가능성을 여러 왔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0220 is 0.389049 over 924 frames.
+107_003_0248 그는 앞서 열린 국회 탈당 회견에서 지난 이십 년간 당을 옮긴 적도 지역구를 떠난 적도 없고 당을 위해 따로 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0248 is 0.45624 over 1086 frames.
+107_003_0264 ﻿신문 변모씨는 열 개월 전 오백 만원을 주고 반려견을 집에 들렸다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0264 is 0.381814 over 739 frames.
+107_003_0303 정씨는 안 전 수석과 최씨가 거의 하루이틀 사이로 감사를 해임하라고 말했고 재단의 중요한 결정 과정에서 두 사람이 확인해준 내용이 거의 일치했다고 설명에 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0303 is 0.51648 over 1473 frames.
+107_003_0307 그리고 사퇴하기 전에 대국민 사과 밑 새누리당에도 사과를 해야 하는데 지금 전혀 사과 기미가 억 원 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0307 is 0.462595 over 914 frames.
+107_003_0308 ﻿궁리 다 그러면 먼저 지금 대학입시제도부터 좀 알고 토론에 들어간다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0308 is 0.316304 over 736 frames.
+107_003_0313 이는 인사권자인 박근혜 대통령에게도 부담으로 작용할 수 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0313 is 0.463742 over 651 frames.
+107_003_0317 한국 롯데의 지주회사격인 호텔롯데를 지배하고 있어 향후 롯데그룹의 경영권 향배를 좌우할 핵심으로 친다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0317 is 0.439157 over 1128 frames.
+107_003_0334 이들이 생각하는 가장 유력한 증거는 현재 화물차에 접수돼 있던 차량에 보면 블랙박스가 있지 않습니다 이 위 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0334 is 0.357203 over 1094 frames.
+107_003_0343 지난 십 년간 기술의 발달로 통신계에 일대 혁명이 잃어 갔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0343 is 0.405446 over 678 frames.
+107_003_0367 미국의 서른 다섯 개 주에서도 리벤지 포르노 금지법을 중에 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0367 is 0.365831 over 661 frames.
+107_003_0389 ﻿허 업체 이십 칠 조 형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다고 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0389 is 0.356654 over 865 frames.
+107_003_0466 하지만 이 도마뱀은 어떻게 중력을 거슬러 다리에서부터 몸을 거쳐 입까지 물을 끌어 올릴 수 있습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0466 is 0.495237 over 935 frames.
+107_003_0571 그러나 그 논의가 한국인의 부족함으로 흘러가는 것을 의도하진 않았다고 설명에 쓴다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0571 is 0.400235 over 773 frames.
+107_003_0641 이 법은 구상단계에서부터 기업의 자율성을 해친다는 비판은 물론 진짜로 능력이 있는 여성은 쿼터제 없이도 승진한다거나 다수가 아닌 특권층 여성만 혜택을 본다는 반대 의견에 분이 찼다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0641 is 0.529839 over 1498 frames.
+107_003_0643 오는 삼십 일 국회 본회의에서 건보 개편안을 확정하면 당장 내년 칠 월부터 바뀐 보험료를 내야 하고 유예 기간이 끝나는 이천 이십 이 년부터는 대폭 변화가 있을 예정인 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0643 is 0.509813 over 1627 frames.
+107_003_0678 컨테이너 박스 같은 공간을 내주는 곳도 여러 곳이 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0678 is 0.45135 over 605 frames.
+107_003_0680 바다의 물결은 남해 먼바다와 제주도 전 해상에서 이 쩜 공 사 쩜 공 미터로 매우 높게 일겠고 그 밖의 해상에서는 영 쩜 오 이 쩜 오 미터로 이익이 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0680 is 0.501858 over 1398 frames.
+107_003_0823 이런 문제는 최근 흔히들 말하는 작은 결혼식에 대한 이해의 문제에서부터 시작한다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0823 is 0.497251 over 825 frames.
+107_003_0872 일본은 아무리 사죄해도 충분하지 않을 만큼 막대한 범죄를 한국에 저질렀을 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0872 is 0.411438 over 731 frames.
+107_003_0934 이들 작품은 그의 인생을 바꿨고 오늘의 그를 있게 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0934 is 0.446043 over 604 frames.
+107_003_0999 그러면 연락을 받은 수취 은행에서 계좌 주인에게 전화를 걸어 돈을 돌려 달라고 요청한 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_0999 is 0.411214 over 860 frames.
+107_003_1076 지금 그 어디에도 결정을 할 때 문재인 당시 비서실장이 북한의 지시를 받고 했다 결재를 받고 했다는 건 없어요 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1076 is 0.448179 over 1103 frames.
+107_003_1127 ﻿눈은 상품 배송에 드론을 이용하겠다며 아마존 프라임에어 계획을 발표에 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1127 is 0.377112 over 781 frames.
+107_003_1274 반면 여권이 좌편향의 표적으로 삼은 칠 종의 검정 한국사 검정교과서는 주체사상의 실체가 아닌 비판적 소개에 집중 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1274 is 0.511722 over 1093 frames.
+107_003_1282 넣으면 고소한 향이 나지만 많이 끓이면 쓴맛이 날 수 있으니까 마지막에 살짝만 주세요 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1282 is 0.452581 over 826 frames.
+107_003_1374 특히 올해 들어 성범죄 공무원에 감경 비율이 크게 늘어 나왔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1374 is 0.408041 over 671 frames.
+107_003_1434 하지만 왕 회장은 로이드리스트 인터뷰에서 상황이 어떻든 용선료 인하를 받아들일 수 없다고 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1434 is 0.509162 over 935 frames.
+107_003_1507 중국은 이밖에 만재배수량 이천 에서 사천 팔백 톤에 이르는 상륙함도 다수 보유하고 있는 등 상륙하면 이 위 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1507 is 0.370627 over 1127 frames.
+107_003_1563 뇌 조직 일 그램에 수백만 개가 쌓여 있기도 했습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1563 is 0.44034 over 623 frames.
+107_003_1571 또한 이른바 과도기에 있는 나라들 특히 동유럽의 나라들과 구소련의 공화국들에 살고 있는 사람들 중에도 영양 부족 상태에 있는 사람이 이천 칠백 만 명이나 틉니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1571 is 0.527519 over 1385 frames.
+107_003_1669 태 편 스마트일자리 프로젝트로 사 차 산업혁명 준비 저성장 늪에 빠진 대한민국이 재도약하기 위해 사 차 산업혁명 물결 속에서 어떤 전략을 취해야 깎여 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1669 is 0.467538 over 1335 frames.
+107_003_1703 영국 돈인 파운드화 가치도 브렉시트 쪽으로 결론이 나지 않는 것이라는 기대 속에 계속 올랐다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1703 is 0.474285 over 843 frames.
+107_003_1795 아직 사각지역에서 버려지는 아이들과 제도 속에 포함되지 못하는 아이들에 대한 특별한 조치는 제대로 이루어질 필요가 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1795 is 0.542567 over 992 frames.
+107_003_1897 뒤에서 단란하게 가정을 꾸리며 행복하게 잘 살아서 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1897 is 0.275775 over 600 frames.
+107_003_1900 홍 지사는 전국 광역지방자치단체 최초로 채무 제로를 달성하겠다는 목표도 밝혔고 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1900 is 0.431667 over 907 frames.
+107_003_1969 이 의원은 곡성은 부모님께서 지금도 살고 계시는 저의 영원한 고향이자 마음의 지역구라면서도 순천 발전을 위한 큰 구상을 갖고 있다고 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_1969 is 0.527175 over 1288 frames.
+107_003_2053 그는 또 이정현 새누리당 대표가 자기 당 비박계에게 대선주자 지지율을 다 합쳐도 십 퍼센트도 안 되는데 떠든다고 독설을 퍼부었다며 이건 분당하자는 통첩으로 보인다고 비난 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2053 is 0.514091 over 1581 frames.
+107_003_2085 또한 오래 근무하지 않고 일찍 청와대를 나온 이유도 석연치 않다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2085 is 0.48443 over 691 frames.
+107_003_2127 정부가 이천 십 삼 년 소득공제를 세액공제로 바꾸고 올해 들어 연말정산 파동이 커지자 저소득층 및 중산층 세금을 갚으면서 나왔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2127 is 0.465676 over 1206 frames.
+107_003_2157 후속 대책으로 판매 제품 전량을 신제품으로 교환하기로 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2157 is 0.458062 over 622 frames.
+107_003_2182 앞으로 한 일 관계가 어떻게 되어야 하느냐는 질문에 다른 나라와 똑같이 전략적으로 생각해야 한다는 응답이 삼십 칠 쩜 팔 퍼센트로 가장 많다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2182 is 0.445012 over 1250 frames.
+107_003_2190 경찰의 카메라에 담긴 화면으로는 라이드가 경찰에게 어떤 위협을 가했는지는 정확하게 드러나지 않고 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2190 is 0.527812 over 926 frames.
+107_003_2270 사람들은 호박 구슬을 실에 꿰어 목에 걸고 다니면 머리와 목과 인후의 통증이 완화되고 호박으로 만든 팔찌는 류머티즘을 앓고 있는 사람들에게 도움이 된다고 밀어 쓴다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2270 is 0.513029 over 1327 frames.
+WARNING (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:220) Outputting partial output for utterance 107_003_2289 since no final-state reached
+107_003_2289 또 밀항 시도 가능성도 열어두고 수사를 전방위적으로 확대하고 있는 상황에 다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2289 is 0.393681 over 834 frames.
+107_003_2351 김씨는 사고 당일 약을 먹은 사실이 없다고 진술 경찰은 김씨의 채혈과 소변 등을 국립과학수사연구원에 분석을 의뢰한 텐데 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2351 is 0.502129 over 1159 frames.
+107_003_2513 동 지에서는 인식 부족과 시력 전문가의 부족을 인도가 안고 있는 문제의 주요 원인으로 왔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2513 is 0.469361 over 916 frames.
+107_003_2528 편도선 줄기세포는 수술 후에 버려지는 편도선 조직에서 추출하기 때문에 다른 줄기세포와 달리 공여자의 부가적인 고통이 없는 게 특징일 다 해 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2528 is 0.436488 over 1290 frames.
+107_003_2546 업무 강도가 센 직업이라 야근과 주말근무를 할 때도 많아서 입주돌보미를 구했는데 비용이 갔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2546 is 0.473662 over 928 frames.
+107_003_2619 그런 태도를 반복적으로 접하는 사람들은 아영씨를 존중하지도 조심스럽게 대하지도 않게 들렸다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2619 is 0.429651 over 859 frames.
+107_003_2653 한편 새누리당은 팔 일 국회의원 연찬회를 통해 새 당명을 자유한국당으로 결정 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2653 is 0.454949 over 887 frames.
+107_003_2668 그 누군가가 방탄소년단이 되고 우리가 더 큰 목소리로 그 문제들에 관해 얘기할 수 있게 된다면 더욱 큰 힘을 가지게 될 것이라며 음악적 주제의식에 대해 솔직히 답했다고 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2668 is 0.506416 over 1465 frames.
+107_003_2714 어제 이 소식 듣고 많이 놀라셨을 것 같아요 많은 분들이 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2714 is 0.407983 over 686 frames.
+107_003_2720 ﻿요 요금까지 정확히 알고 있어서 사람들을 쉽게 속일 수 있었습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2720 is 0.406615 over 815 frames.
+107_003_2749 일각에서는 급격히 팽창한 신규 시장이 트렌드의 변화로 해당 시장과 관련시장을 위축 시킨다는 염려의 시각도 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2749 is 0.518082 over 1029 frames.
+107_003_2755 대학 교직원 초봉 삼 천만원대 중견기업 수준서울권 대학 교직원의 초임 수준은 학교마다 다르지만 대체로 중견기업 수준이 다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2755 is 0.469597 over 1177 frames.
+107_003_2793 시간이 흘러 중국계 인도네시아인이셨던 부모님과 그들의 자녀 다섯 명이 증인이 되어 있습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2793 is 0.453688 over 885 frames.
+LOG (apply-cmvn[5.2.88~1392-cc246]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 65 utterances, errors on 0
+107_003_2801 최근 청년 실업 등 노동 관련 이슈가 많아 예민한 온라인 분위기에 기름을 부은 꼴이 됐으니 다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2801 is 0.432449 over 866 frames.
+WARNING (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:220) Outputting partial output for utterance 107_003_2877 since no final-state reached
+107_003_2877 한국 국민은 걱정할 필요가 없다고 했는데 구체적으로 뭘 걱정할 필요가 없다는 얘긴지 저도 잘 이해가 안 돼 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2877 is 0.497679 over 994 frames.
+107_003_2959 그 후로 오랫동안 여러 증기선의 선장으로 일하다가 그는 천 구백 구 년에 오십 세를 일기로 사망 있습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2959 is 0.469099 over 934 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -87.5573 over 62989 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 65 utterances; 0 had errors.
+107_003_2961 김씨는 아들 결혼시킬 땐 집 평수를 줄일 각오를 하고 있다고 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2961 is 0.414322 over 707 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average logdet is 4.53119 over 62989 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 65 utterances; 0 had errors.
+107_003_2974 곧바로 다음달 중남미 순방 때는 성완종 리스트 의혹을 받던 이완구 당시 총리가 전격 사의를 표명하기도 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 107_003_2974 is 0.516087 over 1029 frames.
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:181) Time taken 60.5357s: real-time factor assuming 100 frames/sec is 0.0961052
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:184) Done 65 utterances, failed for 0
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:186) Overall log-likelihood per frame is 0.45985 over 62989 frames.
+# Accounting: time=62 threads=1
+# Ended (code 0) at Mon Oct  1 04:48:17 KST 2018, elapsed time 62 seconds

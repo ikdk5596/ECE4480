@@ -1,0 +1,29 @@
+# nnet-show-progress --use-gpu=no exp/nnet/1.mdl exp/nnet/2.mdl ark:exp/nnet/egs/train_diagnostic.egs && nnet-am-info exp/nnet/2.mdl 
+# Started at Fri Sep 28 18:04:27 KST 2018
+#
+nnet-show-progress --use-gpu=no exp/nnet/1.mdl exp/nnet/2.mdl ark:exp/nnet/egs/train_diagnostic.egs 
+LOG (nnet-show-progress[5.2.88~1392-cc246]:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:123) At position 0.5, objf per frame is -2.49497
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:134) Total objf change per component is  [ 0.0197391 0.183559 ]
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:145) Parameter differences per layer are  [ 28.5601 46.9087 ]
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:153) Relative parameter differences per layer are  [ 0.749707 0.507837 ]
+nnet-am-info exp/nnet/2.mdl 
+LOG (nnet-am-info[5.2.88~1392-cc246]:main():nnet-am-info.cc:76) Printed info about exp/nnet/2.mdl
+num-components 8
+num-updatable-components 2
+left-context 4
+right-context 4
+input-dim 40
+output-dim 2057
+parameter-dim 1702157
+component 0 : SpliceComponent, input-dim=40, output-dim=360, context=-4 -3 -2 -1 0 1 2 3 4 
+component 1 : FixedAffineComponent, input-dim=360, output-dim=360, linear-params-stddev=0.0259164, bias-params-stddev=0.0581665
+component 2 : AffineComponentPreconditionedOnline, input-dim=360, output-dim=3000, linear-params-stddev=0.0462375, bias-params-stddev=0.257637, learning-rate=0.00997263, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 3 : PnormComponent, input-dim = 3000, output-dim = 300, p = 2
+component 4 : NormalizeComponent, input-dim=300, output-dim=300
+component 5 : AffineComponentPreconditionedOnline, input-dim=300, output-dim=2057, linear-params-stddev=0.151163, bias-params-stddev=0.0123138, learning-rate=0.00997263, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 6 : FixedScaleComponent, input-dim=2057, output-dim=2057, scales-mean=1, scales-stddev=0.166007
+component 7 : SoftmaxComponent, input-dim=2057, output-dim=2057
+prior dimension: 2057, prior sum: 1, prior min: 3.43086e-05
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Sep 28 18:04:30 KST 2018, elapsed time 3 seconds

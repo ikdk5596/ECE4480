@@ -1,0 +1,22 @@
+# nnet-get-egs --left-context=9 --right-context=7 --num-frames=8 "ark,s,cs:utils/filter_scp.pl --exclude exp/nnet/egs/valid_uttlist data/train/split109/22/feats.scp | apply-cmvn  --utt2spk=ark:data/train/split109/22/utt2spk scp:data/train/split109/22/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/egs/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split109/22/utt2spk ark:exp/tri3_ali/trans.22 ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri3_ali/ali.22.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |" ark:- | nnet-copy-egs ark:- ark:exp/nnet/egs/egs_orig.1.22.ark ark:exp/nnet/egs/egs_orig.2.22.ark ark:exp/nnet/egs/egs_orig.3.22.ark ark:exp/nnet/egs/egs_orig.4.22.ark ark:exp/nnet/egs/egs_orig.5.22.ark ark:exp/nnet/egs/egs_orig.6.22.ark ark:exp/nnet/egs/egs_orig.7.22.ark 
+# Started at Fri Sep 28 18:01:26 KST 2018
+#
+nnet-get-egs --left-context=9 --right-context=7 --num-frames=8 'ark,s,cs:utils/filter_scp.pl --exclude exp/nnet/egs/valid_uttlist data/train/split109/22/feats.scp | apply-cmvn  --utt2spk=ark:data/train/split109/22/utt2spk scp:data/train/split109/22/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/egs/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split109/22/utt2spk ark:exp/tri3_ali/trans.22 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri3_ali/ali.22.gz | ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |' ark:- 
+nnet-copy-egs ark:- ark:exp/nnet/egs/egs_orig.1.22.ark ark:exp/nnet/egs/egs_orig.2.22.ark ark:exp/nnet/egs/egs_orig.3.22.ark ark:exp/nnet/egs/egs_orig.4.22.ark ark:exp/nnet/egs/egs_orig.5.22.ark ark:exp/nnet/egs/egs_orig.6.22.ark ark:exp/nnet/egs/egs_orig.7.22.ark 
+apply-cmvn --utt2spk=ark:data/train/split109/22/utt2spk scp:data/train/split109/22/cmvn.scp scp:- ark:- 
+transform-feats --utt2spk=ark:data/train/split109/22/utt2spk ark:exp/tri3_ali/trans.22 ark:- ark:- 
+transform-feats exp/nnet/egs/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+ali-to-post ark:- ark:- 
+ali-to-pdf exp/tri3_ali/final.mdl ark:- ark:- 
+LOG (ali-to-pdf[5.2.88~1392-cc246]:main():ali-to-pdf.cc:68) Converted 55 alignments to pdf sequences.
+LOG (ali-to-post[5.2.88~1392-cc246]:main():ali-to-post.cc:73) Converted 55 alignments.
+LOG (apply-cmvn[5.2.88~1392-cc246]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 54 utterances, errors on 0
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -87.5573 over 44575 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 54 utterances; 0 had errors.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average logdet is 2.13512 over 44575 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 54 utterances; 0 had errors.
+LOG (nnet-get-egs[5.2.88~1392-cc246]:main():nnet-get-egs.cc:174) Finished generating examples, successfully processed 54 feature files, wrote 5597 examples,  with 44575 egs in total; 0 files had errors.
+LOG (nnet-copy-egs[5.2.88~1392-cc246]:main():nnet-copy-egs.cc:170) Read 5597 neural-network training examples, wrote 5597
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Sep 28 18:01:27 KST 2018, elapsed time 1 seconds

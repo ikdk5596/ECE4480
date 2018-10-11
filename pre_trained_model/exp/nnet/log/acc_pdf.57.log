@@ -1,0 +1,10 @@
+# ali-to-post "ark:gunzip -c exp/tri3_ali/ali.57.gz|" ark:- | post-to-tacc --per-pdf=true --binary=false exp/tri3_ali/final.mdl ark:- exp/nnet/57.pacc 
+# Started at Fri Sep 28 18:03:32 KST 2018
+#
+post-to-tacc --per-pdf=true --binary=false exp/tri3_ali/final.mdl ark:- exp/nnet/57.pacc 
+ali-to-post 'ark:gunzip -c exp/tri3_ali/ali.57.gz|' ark:- 
+LOG (ali-to-post[5.2.88~1392-cc246]:main():ali-to-post.cc:73) Converted 62 alignments.
+LOG (post-to-tacc[5.2.88~1392-cc246]:main():post-to-tacc.cc:88) accumulate counts per pdf-id
+LOG (post-to-tacc[5.2.88~1392-cc246]:main():post-to-tacc.cc:103) Done computing transition stats over 62 utterances; wrote stats to exp/nnet/57.pacc
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Sep 28 18:03:32 KST 2018, elapsed time 0 seconds

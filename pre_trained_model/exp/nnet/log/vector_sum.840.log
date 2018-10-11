@@ -1,0 +1,7 @@
+# vector-sum exp/nnet/post.840.1.vec exp/nnet/post.840.10.vec exp/nnet/post.840.2.vec exp/nnet/post.840.3.vec exp/nnet/post.840.4.vec exp/nnet/post.840.5.vec exp/nnet/post.840.6.vec exp/nnet/post.840.7.vec exp/nnet/post.840.8.vec exp/nnet/post.840.9.vec exp/nnet/post.840.vec 
+# Started at Sat Sep 29 00:34:20 KST 2018
+#
+vector-sum exp/nnet/post.840.1.vec exp/nnet/post.840.10.vec exp/nnet/post.840.2.vec exp/nnet/post.840.3.vec exp/nnet/post.840.4.vec exp/nnet/post.840.5.vec exp/nnet/post.840.6.vec exp/nnet/post.840.7.vec exp/nnet/post.840.8.vec exp/nnet/post.840.9.vec exp/nnet/post.840.vec 
+LOG (vector-sum[5.2.88~1392-cc246]:TypeThreeUsage():vector-sum.cc:175) Summed 10 vectors; wrote sum to exp/nnet/post.840.vec
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Sep 29 00:34:20 KST 2018, elapsed time 0 seconds

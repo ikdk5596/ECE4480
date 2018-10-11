@@ -1,0 +1,754 @@
+# lattice-scale --inv-acoustic-scale=18 "ark:gunzip -c exp/nnet/decode_val/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri3/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri3/graph/words.txt | cat > exp/nnet/decode_val/scoring_kaldi/penalty_0.0/18.txt 
+# Started at Mon Oct  1 04:49:01 KST 2018
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=18 'ark:gunzip -c exp/nnet/decode_val/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/tri3/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0019, best cost 105.262 + -349.693 = -244.431 over 1091 frames.
+104_003_0019 지난해 삼 월 김 전 장관의 동료인 장동련 홍익대 교수가 민간 자문단장으로 위촉되면서 본격적인 공모와 개발 작업에 들어갔다고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0193, best cost 64.9197 + -266.8 = -201.88 over 880 frames.
+104_003_0193 그 바람에 나의 몸도 겹쳐 쓰러지며 한창 피어난 노란 동백꽃 속으로 폭 파묻혀 버렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0253, best cost 88.6308 + -346.209 = -257.578 over 1041 frames.
+104_003_0253 현재 백화점과 영화관 등은 오픈해 영업하고 있고 테마파크 및 아파트 등의 공사는 이천 십 팔 년 완공을 목표로 진행돼 왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0280, best cost 111.958 + -364.551 = -252.593 over 1105 frames.
+104_003_0280 또한 박 전 대통령 측은 앞으로 검찰 수사와 관련해 수사 내용에 대한 입장뿐 아니라 변호인단의 활동 상황 등도 소상하게 공개한다는 당시 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0294, best cost 46.4903 + -215.85 = -169.36 over 684 frames.
+104_003_0294 한 잔의 커피가 소비자에게 전해지기 위해선 여러 차례의 공정을 거쳐야 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0352, best cost 70.891 + -237.368 = -166.477 over 801 frames.
+104_003_0352 다른 지역에서는 그곳이 아무리 넓다 하더라도 푸야 라이몬디를 발견하기가 어려울 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0360, best cost 81.2665 + -376.849 = -295.583 over 1084 frames.
+104_003_0360 물론 십 대 자녀가 잘못된 결론을 내리거나 심지어 당신과 비슷한 실수를 저질렀을 때 자신을 정당화하지는 않을까 염려가 될 수도 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0374, best cost 67.8993 + -237.284 = -169.385 over 810 frames.
+104_003_0374 만약 박근혜 대통령이 정말로 손을 내밀면 안철수 대표와 국민의당은 어떤 선택을 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0437, best cost 91.8027 + -339.13 = -247.328 over 1075 frames.
+104_003_0437 대부분 전기는 기업이 사용 가정용 전기에 누진제 적용하는 국가 거의 없어 많이 쓴다고 돈 더 내게 하는 상품이 아닌가 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0451, best cost 92.9076 + -285.598 = -192.69 over 924 frames.
+104_003_0451 더 선은 이름이 밝혀지지 않은 이 노인이 이 년 전 피부암을 진단받은 뒤 자신의 양심과 씨름해왔다고 전 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0452, best cost 118.687 + -324.599 = -205.911 over 1713 frames.
+104_003_0452 ﻿이상은 이 미생물들은 바닷물에서 추출한 물질과 끈끈한 점액을 섞어서 접합제를 만든 다음 바위같이 생긴 집에 층층이 따름이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0472, best cost 117.305 + -465.339 = -348.034 over 1389 frames.
+104_003_0472 때로는 바람이 풀밭을 스치는 소리를 들으면서 그 소리와는 대조적으로 크고도 찢어지는 듯이 날카로운 쌍띠물떼새의 울음소리가 물통 근처에서 들려오는 것에 귀를 기울이곤 않습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0526, best cost 120.742 + -427.021 = -306.279 over 1283 frames.
+104_003_0526 육십 사 년 초임검사로 임관한 김 전 실장은 십 년 후인 칠십 사 년 사 월 중앙정보부장 법률보좌관으로 파견됐고 같은 해 구 월 대공수사국장이 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0555, best cost 81.6824 + -355.039 = -273.357 over 1061 frames.
+104_003_0555 하지만 이 같은 실수는 경쟁사를 의식해 졸속으로 진행되는 마트 할인 행사의 단면을 드러냈다는 점에서 소비자들의 시선이 곱지 않다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0577, best cost 157.548 + -418.862 = -261.314 over 1344 frames.
+104_003_0577 급한 대표는 지난해 십 일 월 삼 간담회를 열고 배송인력 강화를 위해 이천 십 육 년 한 만명 이천 십 칠 년 일 만 다섯 천명까지 늘리겠다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0604, best cost 77.88 + -355.848 = -277.967 over 1070 frames.
+104_003_0604 노예로 끌려 온 많은 사람들은 쇠사슬에 묶여 구타를 당하고 낙인이 찍혔으며 그 후 네 킬로미터에 달하는 노예의 길을 걸어가야 했습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0664, best cost 103.18 + -409.471 = -306.291 over 1178 frames.
+104_003_0664 작년 십 이 월 천 이백 십 원대까지 올랐던 원 달러 환율은 최근 천 백 오십 원대로 오 퍼센트가량 떨어지면서 외국인 자금 유입에 도움을 주고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0667, best cost 99.0258 + -119.862 = -20.836 over 1637 frames.
+104_003_0667 오늘날 청소년 세대가 심각한 문제를 겪고 있다는 데는 의문의 여지가 없으니까 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0672, best cost 62.171 + -251.83 = -189.659 over 825 frames.
+104_003_0672 세계 보건 기구의 노화 및 보건 프로그램의 팀장인 알렉상드르 칼라슈는 다음과 같이 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0733, best cost 43.2356 + -186.66 = -143.424 over 620 frames.
+104_003_0733 각 언론사에서 대선주자 취재를 전담하는 마크맨도 아예 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0756, best cost 96.8085 + -205.64 = -108.831 over 765 frames.
+104_003_0756 태 데이터를 위해 눈빛 입꼬리 자세 걸음걸이 등 사소한 부분까지 신경 있었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0778, best cost 121.294 + -432.725 = -311.432 over 1496 frames.
+104_003_0778 불이 시작된 십 삼 층 집 주인 이모씨와 이씨의 막내딸 이모양이 숨진 채 발견됐고 화재 당시 일 층으로 추락했던 이씨의 둘째딸도 병원으로 이송됐지만 끝내 숨을 걸었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0839, best cost 130.49 + -364.508 = -234.019 over 1148 frames.
+104_003_0839 관계자는 화재 발생 후 첫 신고 전 십 분 사이에 건물 출입구로 누군가 한 명만 지나갔어도 피해를 줄일 수 있었을 것이라며 안타까와 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0890, best cost 66 + -276.858 = -210.858 over 855 frames.
+104_003_0890 박씨는 지난 오 일에도 본보 등 언론과 장시간 전화 인터뷰를 할 정도로 증상이 심한 상태가 아니었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0987, best cost 78.4545 + -296.598 = -218.144 over 991 frames.
+104_003_0987 부당수령자의 수령액을 환수 조치하고 다음해 성과상여금을 지급하지 않는 한편 징계 조치하기로 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_0993, best cost 78.5318 + -243.355 = -164.823 over 813 frames.
+104_003_0993 ﻿들 역시 수중 케이블을 설치할 때 가장 안전하고 효과적인 경로를 결정할 수 있게 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1119, best cost 79.7821 + -371.126 = -291.344 over 1076 frames.
+104_003_1119 여러 해 앞서 탐험가인 커닝엄과 라이히하르트도 마카다미아 열매를 수집했지만 보관하기만 하고 품종에 관한 설명을 남기지 않았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1145, best cost 137.335 + -483.528 = -346.193 over 1424 frames.
+104_003_1145 신 회장은 일본롯데 계열사들의 유 월 정기주총과 금융기관 접촉 등을 마무리한 후 칠 월 이 삼 일께 귀국 현재 한국 롯데에서 진행되고 있는 검찰 수사에 적극 협조한다는 계획이 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1188, best cost 73.8264 + -159.761 = -85.9347 over 622 frames.
+104_003_1188 ﻿아 아이들이 그렇다는 게 아니라 이건 학부모님들이 신청하는 것이었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1208, best cost 82.0272 + -324.217 = -242.19 over 1015 frames.
+104_003_1208 이런 모독적인 발언은 오히려 헌재 재판관들이 대통령 파면 쪽으로 마음을 굳히는 데 결정적인 역할을 한 것으로 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1257, best cost 77.3575 + -357.494 = -280.136 over 1037 frames.
+104_003_1257 한 온라인 영어학원은 여자 아이돌 그룹의 앨범 재킷 사진에 나온 옷을 강사들에게 똑같이 입히고 비슷한 포즈로 포스터 촬영을 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1290, best cost 110.429 + -376.999 = -266.57 over 1177 frames.
+104_003_1290 지금 박근혜 후보에게 지난 대선 때 표를 던진 사람들 모두가 오 쩜 일 육 을 혁명으로 긍정적으로 보는 게 아니라는 사실을 대통령께서 알았으면 주었습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1291, best cost 77.476 + -312.236 = -234.76 over 1003 frames.
+104_003_1291 천 구백 육십 오 년 오 월 십 일 김광진과 함께 판문점을 관광하는 모습이 한국 언론에 포착되기도 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1305, best cost 73.6722 + -113.909 = -40.2371 over 542 frames.
+104_003_1305 ﻿그 때 여전히 세월호 일곱 시간에 대해서는 미궁에 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1313, best cost 59.6046 + -168.31 = -108.705 over 594 frames.
+104_003_1313 그래도 권위있는 아이비리그 명문대학의 발표이니 믿어야 깎여 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1364, best cost 48.1805 + -221.258 = -173.078 over 700 frames.
+104_003_1364 이후 중국 정부에서 우리나라와 같이 표준화된 매뉴얼을 쓸 것으로 기대하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1370, best cost 80.6008 + -282.573 = -201.972 over 958 frames.
+104_003_1370 경기 성남중원은 새누리당에서 십 칠 십 팔 대 국회의원을 지낸 신상진 당협위원장이 후보로 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1402, best cost 92.6862 + -333.62 = -240.934 over 1063 frames.
+104_003_1402 그는 미국 관료들은 전 씨를 약화시켜 한국을 불안정하게 만들고 예측 불가능한 결과를 부를까 봐 극도로 조심했다고 비쌌다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1416, best cost 103.042 + -383.152 = -280.11 over 1185 frames.
+104_003_1416 먼저 아베총리는 오사카시의 학교 법인 모리토모 학원이 사 월 개교할 예정인 초등학교와 관련 아키 부인이 명예 교장을 사임했다고 바 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1447, best cost 48.8045 + -182.899 = -134.095 over 664 frames.
+104_003_1447 이 기사에 언급된 모든 원칙은 하느님의 말씀인 성경에 나오는 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1452, best cost 73.4164 + -212.146 = -138.729 over 722 frames.
+104_003_1452 재판부는 우선 피해자 조중필씨를 직접 칼로 찌른 사람은 패터슨이라고 판단 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1470, best cost 58.4943 + -278.423 = -219.929 over 832 frames.
+104_003_1470 중도금 대출 은행이 정해지지 않았다는 소식에 당첨자들은 계약을 망설이거나 심지어 포기하기도 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1570, best cost 49.3836 + -230.238 = -180.854 over 707 frames.
+104_003_1570 마약이 구석구석까지 침투해 있는 많은 사회에 대해서도 그렇게 말할 수 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1621, best cost 65.5155 + -219.074 = -153.558 over 714 frames.
+104_003_1621 그러나 비박계 유승민 의원은 침묵을 지키며 박 대통령의 퇴장을 바라만 보았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1661, best cost 59.8085 + -273.238 = -213.429 over 813 frames.
+104_003_1661 그렇게 해주시면 후보들은 정책과 비전을 가지고 국민들에게 새로운 대한민국을 어떻게 만들 것인지 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1850, best cost 76.3777 + -272.144 = -195.767 over 864 frames.
+104_003_1850 각 정당과 무소속 후보들은 치열한 예선을 거쳐 이제 당락을 가르는 십 여 일간의 진검승부에 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1856, best cost 84.1272 + -307.969 = -223.842 over 928 frames.
+104_003_1856 ﻿들 여태껏 편입을 방치한 만큼 서울 주요 대학을 중심으로 특별감사에 나서야 한다는 지적에 힘이 실리고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1925, best cost 69.0462 + -318.205 = -249.159 over 965 frames.
+104_003_1925 박 대통령은 위민관 삼 층 영상국무회의실에서 참모들과 머리를 맞대고 정국 수습책을 논의한다고 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1938, best cost 66.3197 + -153.932 = -87.6123 over 606 frames.
+104_003_1938 우리 야 배열 교수를 제외하고 모두 불안하다고 느꼈다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_1968, best cost 72.5686 + -252.094 = -179.525 over 845 frames.
+104_003_1968 번거로운 고급 수입차와 사 륜구동차는 견인하지 않는다는 불문율이 공공연히 퍼져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2035, best cost 103.38 + -271.846 = -168.466 over 983 frames.
+104_003_2035 이날 오전 아홉 시 삼십 분경 북한 풍계리일대에서 규모 오 쩜 공 의 인공지진파를 감지했다고 발전 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2079, best cost 91.8827 + -344.851 = -252.968 over 1050 frames.
+104_003_2079 의료계 연구원들은 아스페르거 증후군이 가벼운 형태의 자폐증인지 아니면 전혀 다른 장애인지 확실한 결정을 내리지 못하고 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2118, best cost 95.5567 + -279.763 = -184.206 over 959 frames.
+104_003_2118 미 거래선 전용 공간을 칠십 퍼센트로 확대하고 각 참석자의 필요에 따른 전시공간으로 기획한 것이 아니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2120, best cost 119.99 + -424.043 = -304.053 over 1534 frames.
+104_003_2120 새정치민주연합 안철수 의원이 낡은 진보 청산을 위해 김대중 노무현정부를 넘어서는 새로운 집권 비전을 제시해야 한다고 당 지도부에 주무 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2128, best cost 107.8 + -252.539 = -144.738 over 842 frames.
+104_003_2128 습도유지 성능이 우수한 채소실의 보습률은 팔십 팔 퍼센트 구십 사 퍼센트 수준이 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2340, best cost 91.0176 + -373.125 = -282.107 over 1093 frames.
+104_003_2340 김씨는 나한테는 돈도 없고 권력도 없으니까 할 수 있는 게 굶는 것 높은 곳에 올라가는 것 그리고 비는 것 밖에 할 수가 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2347, best cost 43.2677 + -188.886 = -145.618 over 623 frames.
+104_003_2347 또 바른정당을 제외한 야 삼 당은 탄핵을 공동 추진키로 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2457, best cost 91.8889 + -243.048 = -151.159 over 854 frames.
+104_003_2457 이미 그렇게 생각하고 있겠지만 우리가 어디에 살든지 여호와께서 항상 우리 곁에 계시다는 걸 기록하며 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2507, best cost 74.0102 + -228.385 = -154.375 over 743 frames.
+104_003_2507 ﻿이날 아파트를 구입할 때 한 번에 값을 모두 치를 수 있는 사람은 많지 않습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2514, best cost 124.998 + -471.096 = -346.099 over 1400 frames.
+104_003_2514 또 우리 국민 열 명이 인터넷을 통해 과격 이슬람 무장단체인 이슬람국가를 공개 지지한 사례를 적발했으나 관계 법령 미비로 아직 인적 사항을 파악하지 못했다고 보고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2769, best cost 129.959 + -457.483 = -327.524 over 1351 frames.
+104_003_2769 특히 삼십 에서 사십 세 미만 가구주는 상대적으로 소비성향이 강한 반면 보유자산 등 경제적 여력은 크지 않아 빚 부담이 커지면 당장 소비위축으로 이어질 가능성이 높다는 분석 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2788, best cost 88.9659 + -320.564 = -231.598 over 1017 frames.
+104_003_2788 ﻿물이 많이 들어간 음식을 짙은 갈색이 될 때까지 튀기거나 부쳐서 먹으면 발암 위험이 커진다는 경고가 잇따르고 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2982, best cost 62.5255 + -282.093 = -219.568 over 846 frames.
+104_003_2982 박 대통령의 지지율이 국정교과서 정국 이후 하락 추세를 보이고 있는 점도 작용했을 가능성이 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 104_003_2993, best cost 88.576 + -220.381 = -131.805 over 774 frames.
+104_003_2993 태 손질한 건강한 모발은 그 사람을 돋보이게 해 주며 보는 이들의 감탄을 자라입니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0029, best cost 104.214 + -278.928 = -174.714 over 1043 frames.
+105_003_0029 ﻿뭇 자녀들이 사랑을 제대로 못 받고 크면 매우 심각한 결과가 초래된다는 결론을 오 월 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0478, best cost 263.425 + -108.987 = 154.438 over 2043 frames.
+105_003_0478 ﻿가령 나가면 앤이 구 일 문 두께 스물 센티미터를 평수를 여유 공간은 스물 센티미터라는 일이 많다 가지 않았다 하더라도 푸야 결정 등 대부분 국가는 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0565, best cost 64.7869 + -270.475 = -205.688 over 852 frames.
+105_003_0565 지난해 이들 크루즈관광객의 평균 체류기간은 오 쩜 구 사 시간 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0580, best cost 149.695 + -552.169 = -402.474 over 1662 frames.
+105_003_0580 그리고 이 나무는 태즈메이니아 남부 지역에 부는 남극의 바람을 맞으면서도 또한 해안에 위치한 산간 지방의 안개가 많은 환경에서도 무성하게 사람이 데다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0668, best cost 70.7698 + -265.815 = -195.045 over 814 frames.
+105_003_0668 평소 오전 아홉 시 에서 오후 일곱 시까지 일하면 하루 이 만원 정도를 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0699, best cost 121.754 + -442.149 = -320.395 over 1353 frames.
+105_003_0699 ﻿밥 돈 안 되는 공익사건 남들 다 박수쳐주는 사건은 제가 하고 당신네들은 사무실 운영해야 되니까 돈 버는 사건 당신네들이 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0725, best cost 78.0082 + -284.524 = -206.516 over 891 frames.
+105_003_0725 약 여당에서 분명한 입장을 표해야 한다고 연일 압박 수위를 높이고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_0846, best cost 112.422 + -339.811 = -227.389 over 1154 frames.
+105_003_0846 ﻿더 보호하기 위하여 회스는 약 이백 만 명의 인명을 앗아 가는 일을 지휘하였는데 그중 대부분이 쓴다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1010, best cost 103.552 + -279.184 = -175.632 over 920 frames.
+105_003_1010 황 은 엔비디아에서 매출의 삼십 퍼센트 이상을 연구개발에 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1049, best cost 108.503 + -491.566 = -383.064 over 1457 frames.
+105_003_1049 이번에 발견된 화석은 에우노토사우르스처럼 등딱지 배딱지가 없지만 등뼈 가슴뼈 등 골격구조는 오돈토켈리스를 않았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1057, best cost 86.7422 + -232.473 = -145.73 over 849 frames.
+105_003_1057 이와 함께 변 씨의 가게에선 쇠 파이프와 곡괭이 자루까지 발견됐으며 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1136, best cost 73.9937 + -349.709 = -275.715 over 1035 frames.
+105_003_1136 하지만 싫증 나면 버리면 그만이라는 식의 사고방식은 단지 물건에만 영향을 미치는 데서 그치지 않습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1156, best cost 120.007 + -553.846 = -433.839 over 1629 frames.
+105_003_1156 업계 관계자는 가격이 오르면 지상파 삼 사는 연간 천 이백 억원 추가 수익을 올린다면서 그 부담은 이용자에게 고스란히 넘어갈 수밖에 없다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1160, best cost 115.494 + -476.665 = -361.171 over 1455 frames.
+105_003_1160 지난달 사 일 고서점가인 도쿄의 간다진보 정 한국 서적 전문 북카페 책거리에서는 미생의 일본 팬들이 모임을 같았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1370, best cost 91.5003 + -365.882 = -274.382 over 1094 frames.
+105_003_1370 경기 성남중원은 새누리당에서 십 칠 십 팔 대 국회의원을 지낸 신상진 당협위원장이 후보로 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1386, best cost 110.547 + -402.719 = -292.173 over 1188 frames.
+105_003_1386 이날 박창진 사무장은 내 지인으로부터 메신저 연락이 왔는데 나에 대한 찌라시가 돌고 있다고 한다고 전 냈다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1408, best cost 109.058 + -381.752 = -272.694 over 1172 frames.
+105_003_1408 국내 경기가 여전히 침체된 상태에서 금리마저 올라가면 경기 회복 국면에 찬물을 끼얹을 수도 있다는 지난 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1440, best cost 86.7241 + -345.585 = -258.861 over 1063 frames.
+105_003_1440 애플 입장에선 이천 십 이 년 맥북 프로 레티나 버전 이후 처음으로 맥북 디자인을 확 줄었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1490, best cost 115.799 + -359.903 = -244.104 over 1180 frames.
+105_003_1490 오 원 미국 내브래스카주 오마하의 동물원에 만취한 여성이 몰래 들어갔다가 호랑이에 울렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1861, best cost 99.553 + -343.146 = -243.592 over 1052 frames.
+105_003_1861 지금은 대통령한테 줄을 대서 당선을 해보겠다 이런 이미지를 주는 경향이 없지 않다고 생각 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1963, best cost 83.4207 + -398.474 = -315.053 over 1148 frames.
+105_003_1963 십 이 일 경주에서 발생한 지진으로 포항시 남구의 한 마트 진열장에 쌓여 있던 상품들이 바닥에 떨어져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_1973, best cost 75.9707 + -382.056 = -306.085 over 1111 frames.
+105_003_1973 국회에서 청문보고서가 채택되지 않아도 대통령이 임명 권한을 갖고 경찰청장 임명을 강행할 수 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2046, best cost 91.7148 + -153.754 = -62.0388 over 693 frames.
+105_003_2046 ﻿왜 미약하게나마 제가 할 수 있는 일을 찾아 닦아 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2059, best cost 108.625 + -310.96 = -202.335 over 1064 frames.
+105_003_2059 아마 크리스티나는 아이가 치료에 대한 두려움이 확 줄었다 면서 동병상련을 느끼는지 서로가 서로를 의지한다고 바뀌었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2066, best cost 80.5469 + -277.582 = -197.035 over 916 frames.
+105_003_2066 이미 알려진 대로 미군은 한반도에 세 개 사드 포대 기지 배치가 필요하다는 입장을 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2094, best cost 124.661 + -268.303 = -143.643 over 1007 frames.
+105_003_2094 태 팀 예민한 불특정 이용자와의 만남을 주선해주는 스마트폰 프로그램을 만난다든가 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2095, best cost 66.4336 + -213.776 = -147.343 over 761 frames.
+105_003_2095 별로 없는 사람들은 처음에 자주 상처를 입었을 것입니까 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2227, best cost 101.528 + -396.999 = -295.47 over 1247 frames.
+105_003_2227 하느님께서는 누구에게 우리가 우리의 형상대로 우리의 모양을 따라 사람을 만들자라는 말씀을 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2232, best cost 120.951 + -465.752 = -344.8 over 1477 frames.
+105_003_2232 이 삼 달러를 더 달라고 해서 공항경찰들과 말다툼을 벌이는 경우는 종종 봤지만 결국 대부분 요구하는 대로 몇 푼 더 줘서 문제를 해결하기 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2246, best cost 143.91 + -642.578 = -498.668 over 1863 frames.
+105_003_2246 사진 뉴시스이정현 새누리당 대표가 최순실씨의 박근혜 대통령 연설문 개입 의혹에 대해 나도 친구의 조언을 듣는다 그럴만한 연유가 있지 않겠냐고 말하며 우회적으로 옹호해 때다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2266, best cost 48.2243 + -255.803 = -207.578 over 756 frames.
+105_003_2266 하지만 때때로 해로운 병균 때문에 몸에 이상을 느끼기도 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2284, best cost 100.608 + -215.735 = -115.127 over 759 frames.
+105_003_2284 그냥 권 불법전매 다운계약서 등에 대한 단속을 거다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2511, best cost 83.7546 + -369.431 = -285.676 over 1232 frames.
+105_003_2511 이천 오 년에 실시된 한 뉴스 여론 조사에 따르면 미국인의 오십 일 퍼센트는 진화론을 믿지 않는다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2573, best cost 59.6088 + -311.424 = -251.815 over 937 frames.
+105_003_2573 국회 추천이라고 했으니까 새누리당은 사사건건 딴지를 걸면서 시간을 끌 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2603, best cost 85.9187 + -315.521 = -229.602 over 1002 frames.
+105_003_2603 넓은 지식과 예의 있는 행동을 강조한 공자 말씀 박문약례에서 따온 일은 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2722, best cost 75.1501 + -209.029 = -133.879 over 774 frames.
+105_003_2722 분명히 배당률이 크게 변할 때는 무슨 일이 일어나고 있다는 얘기였다고 밝혔고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2831, best cost 84.3618 + -285.059 = -200.698 over 968 frames.
+105_003_2831 처음 하느님을 믿게 되었을 때 나는 대학교에서 삼 년째 과학 연구를 하던 중에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2853, best cost 73.0787 + -206.737 = -133.658 over 684 frames.
+105_003_2853 마이너스 금리 예치제도 효과를 보완하기 위한 목적 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2905, best cost 127.408 + -339.128 = -211.72 over 1154 frames.
+105_003_2905 정권 희망도 드리지 못했습니다라며 호남이 지지를 거둔다면 정계에서 은퇴하겠다고 갈겨 깎아 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 105_003_2955, best cost 61.0868 + -287.047 = -225.96 over 882 frames.
+105_003_2955 그런데 여기서 이런 식으로 성매매 업주한테 빌린 돈은 안 갚아도 된다는 교육을 했습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0077, best cost 113.393 + -398.642 = -285.249 over 1188 frames.
+106_003_0077 인사를 결정하는 과정에서 당 지도부가 우 원내대표 및 원내지도부와 충분한 상의를 거치지 않은 채 일방적으로 인사를 했다는 불만도 원내지도부를 중심으로 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0098, best cost 49.194 + -193.925 = -144.731 over 578 frames.
+106_003_0098 특히 전 전 대통령은 내빈 소개 때 여전히 전두환 각하라고 불리기도 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0161, best cost 91.6595 + -163.436 = -71.7761 over 667 frames.
+106_003_0161 이 씨와 징수금을 부과하고 재산을 압류한 것은 부당하다고 한결 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0199, best cost 111.058 + -435.33 = -324.272 over 1290 frames.
+106_003_0199 아버지 신격호 롯데 총괄회장이 축출한 가신들을 결집시킨 신동빈 회장이 한 일 롯데의 지주회사인 일본 롯데홀딩스 주주총회에서 종지부를 찍는 전략으로 가닥을 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0238, best cost 90.1505 + -201.983 = -111.833 over 755 frames.
+106_003_0238 ﻿이 오늘 새벽 전남 여수에서 오늘 새벽 전남 여수에서 무궁화호 열차가 탈 수 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0304, best cost 116.159 + -294.303 = -178.144 over 921 frames.
+106_003_0304 소문이 나자 낙동강유역환경청은 지난해 삼 월 뉴트리아 퇴치전담반을 꾸리고 전씨를 퇴치반장으로 스커드 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0325, best cost 54.5754 + -177.529 = -122.953 over 627 frames.
+106_003_0325 가방을 비롯한 수하물들을 컨베이어 벨트 위에 가능한 한 납작하게 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0354, best cost 101.368 + -417.665 = -316.298 over 1323 frames.
+106_003_0354 다수의 생각에 반하는 내용의 대자보가 붙더라도 학생들은 반박 대자보를 게재하거나 포스트잇에 자신의 의견을 담아 대자보 곁에 붙여놓지 대자보를 훼손하지는 않는다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0596, best cost 148.821 + -368.274 = -219.453 over 1192 frames.
+106_003_0596 청소년들을 혁신안은 이천 십 이 년 총선에선 여성 십 오 퍼센트 이후 선거에서는 여성 삼십 퍼센트 할당제를 제안했고 한명숙 지도부는 이를 수용 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0654, best cost 80.4801 + -252.992 = -172.512 over 793 frames.
+106_003_0654 이 법안은 지난해 구 월 법무부가 입법예고한데 이어 지난달 삼십 일 일 국무회의를 통과하자 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0666, best cost 75.5313 + -207.29 = -131.759 over 655 frames.
+106_003_0666 하지만 만성적인 운전자 부족에 시달리는 업계의 현실에서 이 같은 대책이 실효성이 없다는 지적을 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0753, best cost 71.7108 + -233.261 = -161.55 over 760 frames.
+106_003_0753 ﻿다만 다양한 증언과 목격을 통해 이슬람 극단 세력이 이번 테러의 배후세력이라는 추정이 나온다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0787, best cost 48.673 + -207 = -158.327 over 583 frames.
+106_003_0787 시가 총액 칠 천억 달러를 사상 최초로 돌파하면서 최전성기를 구가하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0816, best cost 98.5234 + -260.119 = -161.595 over 992 frames.
+106_003_0816 이에 반해 청와대 사진은 한 컷도 예외 없이 대통령의 모습을 담고 있으며 상황에 따라 일정한 구도가 방법 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_0931, best cost 93.4801 + -354.855 = -261.375 over 1082 frames.
+106_003_0931 이른바 온라인 페미니즘이 지금 여기까지 오게 된 것도 팔십 년대 이후 한국에 뿌리를 내리기 시작한 페미니즘의 흐름에 많은 빚을 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1085, best cost 122.364 + -464.675 = -342.311 over 1421 frames.
+106_003_1085 국민의당이 십 사 쩜 팔 퍼센트로 새누리당이 십 이 퍼센트 바른정당이 십 쩜 사 퍼센트로 오차범위 내에서 국민의당 새누리당 바른정당이 팽팽한 것으로 나타났다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1167, best cost 129.858 + -512.577 = -382.718 over 1610 frames.
+106_003_1167 작년 칠 월 정계를 은퇴한 손 전 대표는 그동안 정치권과 거리를 두는 모습을 보였지만 최근 카자흐스탄 강연에서 박근혜 대통령의 대북정책을 비판하면서 정치현안에 대해 입을 열었다며 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1191, best cost 47.5065 + -198.971 = -151.465 over 555 frames.
+106_003_1191 대다수 사람이 화를 내고 화해로 끝을 맺지만 병원 치료가 필요한 경우는 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1208, best cost 81.0973 + -297.292 = -216.195 over 970 frames.
+106_003_1208 이런 모독적인 발언은 오히려 헌재 재판관들이 대통령 파면 쪽으로 마음을 굳히는 데 결정적인 역할을 한 것으로 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1305, best cost 79.9664 + -80.8126 = -0.846237 over 356 frames.
+106_003_1305 태 여전히 세월호 일곱 시간에 대해서는 미군이 물듭니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1326, best cost 67.8781 + -239.999 = -172.121 over 808 frames.
+106_003_1326 그리고 오바마 대통령이 걸려 넘어지지 않도록 차고 바닥을 깨끗이 치워달라고 요구한 것으로 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1376, best cost 85.5712 + -224.133 = -138.562 over 790 frames.
+106_003_1376 상위 일 퍼센트가 소득 삼 억 구천 만원이 될 동안 하위 이십 퍼센트는 소득이 오 만원 들었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1401, best cost 86.8358 + -240.599 = -153.763 over 913 frames.
+106_003_1401 검찰 관계자는 십 칠 일 내부 기류는 기본적으로 구속영장 청구가 불가피하다는 인식이라고 말했다가 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1418, best cost 49.0112 + -194.413 = -145.401 over 616 frames.
+106_003_1418 대부분은 복합적인 국제 정치 상황에서 나오는 좌절을 제게 쏟아내는 거다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1720, best cost 58.2425 + -154.954 = -96.7118 over 567 frames.
+106_003_1720 약 백 명의 성경 연구생이 포즈디쇼브체 마을에서 보여 왔습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1749, best cost 79.765 + -149.54 = -69.7754 over 667 frames.
+106_003_1749 홍 일베 사용자들이 전라도민들을 비하할 때 쓰는 단어가 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1753, best cost 133.978 + -431.094 = -297.116 over 1359 frames.
+106_003_1753 십 구 일 오후 경찰청에서 브리핑을 열어 이번 집회를 사 십 팔 불법 폭력 집회로 규정하고 시위 주동자와 극렬 행위자들을 끝까지 추적해 전원 사법처리할 계획이라고 밝혔고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_1848, best cost 136.225 + -286.184 = -149.959 over 1030 frames.
+106_003_1848 ﻿그 이천 십 육 년 시 월 십 일 일 에서 이천 십 육 년 십 일 월 십 구 일 내로 유통기한이 표시된 분들이 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2020, best cost 82.4632 + -280.667 = -198.204 over 913 frames.
+106_003_2020 또 이번 사태를 통해 북한이 남 남 갈등을 기대했다면 북한군 입장에서는 우리군의 사기만 올려준 꼴이 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2034, best cost 46.64 + -143.923 = -97.283 over 441 frames.
+106_003_2034 다음 질문들에 답한 다음 성구에 있는 빈칸을 채워 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2041, best cost 49.2109 + -192.978 = -143.767 over 553 frames.
+106_003_2041 업계는 국내 단체급식 시장 규모를 십 구 조원가량으로 추산하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2058, best cost 55.7753 + -92.6619 = -36.8866 over 493 frames.
+106_003_2058 강 보를 유도하는 말을 가르칠 수도 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2072, best cost 92.6187 + -171.053 = -78.4341 over 657 frames.
+106_003_2072 한 민사 우선 성난 민심을 조롱하는 대통령의 말씀이었다고 생각 되는데 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2135, best cost 68.8422 + -288.13 = -219.288 over 842 frames.
+106_003_2135 그리고 우리 언론에는 칼빈슨함만 이야기를 하고 있지만 아까 도 살짝 언급을 하셨는데 니미츠 항공모함이라고 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2225, best cost 84.8358 + -163.365 = -78.5293 over 657 frames.
+106_003_2225 별 나영희 윤유선 코미디언 이성미 등도 비통함을 금치 못했다고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2324, best cost 94.5487 + -236.106 = -141.557 over 850 frames.
+106_003_2324 ﻿그러므로 폭풍이나 홍수 같은 자연재해에 대한 직접적인 책임이 사탄에게 있다고 단정하지 맛이 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2499, best cost 111.644 + -417.754 = -306.11 over 1246 frames.
+106_003_2499 박근혜 대통령의 국정농단 연루로 헌법재판소에선 탄핵 심판이 진행 중이고 이로 인해 여권은 새누리당과 바른정당으로 갈리는 초유의 보수당 분당 사태까지 잃어 갔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2844, best cost 109.429 + -393.135 = -283.706 over 1273 frames.
+106_003_2844 문 후보 측 박광온 공보단장은 각 매체로선 대선 후보 인터뷰가 오 년에 딱 한 번 주어지는 만큼 모두에게 골고루 기회를 주자는 취지라고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2880, best cost 64.5876 + -290.892 = -226.304 over 952 frames.
+106_003_2880 야당 지지자들은 문 대표의 무능에 진절머리를 낼 테고 떨어지는 지지율 소리에 의원들은 좌불안석일 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 106_003_2917, best cost 83.4478 + -238.173 = -154.725 over 746 frames.
+106_003_2917 새누리당 핵심 관계자는 구 일 현행 교과서에 문제가 많다는 것에 대해선 이견이 없다고 말았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0075, best cost 102.11 + -377.684 = -275.574 over 1183 frames.
+107_003_0075 ﻿옷이 통화를 하면서 돈을 냉장고에 둔 뒤 문을 세 번 두드리고 보관해 두었지만 한씨 등이 전날 경찰에 잡히면서 피해를 보지는 않았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0141, best cost 46.0072 + -201.532 = -155.524 over 656 frames.
+107_003_0141 그리고 수사를 관련자를 마흔 여섯 명이나 불러서 조사를 했어요 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0145, best cost 62.4931 + -201.434 = -138.941 over 773 frames.
+107_003_0145 ﻿내 박해상 원장은 겨드랑이 털은 특별한 기능이 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0220, best cost 117.265 + -264.859 = -147.594 over 924 frames.
+107_003_0220 이사 삼 선 도전에 대해서는 적절한 시점에 너무 늦지 않게 말씀 드릴 것이라며 가능성을 여러 왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0248, best cost 96.3529 + -328.268 = -231.915 over 1086 frames.
+107_003_0248 그는 앞서 열린 국회 탈당 회견에서 지난 이십 년간 당을 옮긴 적도 지역구를 떠난 적도 없고 당을 위해 핀 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0264, best cost 88.2005 + -205.756 = -117.556 over 739 frames.
+107_003_0264 ﻿신문 변모씨는 열 개월 전 오백 만원을 주고 반려견을 집에 들렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0303, best cost 128.591 + -494.092 = -365.501 over 1473 frames.
+107_003_0303 정씨는 안 전 수석과 최씨가 거의 하루이틀 사이로 감사를 해임하라고 말했고 재단의 중요한 결정 과정에서 두 사람이 확인해준 내용이 거의 일치했다고 설명에 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0307, best cost 91.3204 + -285.629 = -194.308 over 914 frames.
+107_003_0307 그리고 사퇴하기 전에 대국민 사과 밑 새누리당에도 사과를 해야 하는데 지금 전혀 사과 기미가 억 원 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0308, best cost 83.8353 + -172.87 = -89.0346 over 736 frames.
+107_003_0308 다 그러면 먼저 지금 대학입시제도부터 좀 알고 토론에 들어간다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0313, best cost 45.7927 + -193.16 = -147.368 over 651 frames.
+107_003_0313 이는 인사권자인 박근혜 대통령에게도 부담으로 작용할 수 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0317, best cost 95.1328 + -328.057 = -232.924 over 1128 frames.
+107_003_0317 한국 롯데의 지주회사격인 호텔롯데를 지배하고 있어 향후 롯데그룹의 경영권 향배를 좌우할 핵심으로 친다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0334, best cost 123.185 + -285.536 = -162.351 over 1094 frames.
+107_003_0334 이들이 생각하는 가장 유력한 증거는 현재 화물차에 접수돼 있던 차량에 보면 블랙박스가 있지 않습니다 이 위 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0343, best cost 67.0312 + -189.957 = -122.926 over 678 frames.
+107_003_0343 지난 십 년간 기술의 발달로 통신계에 일대 혁명이 잃어 갔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0367, best cost 64.4979 + -170.174 = -105.676 over 661 frames.
+107_003_0367 미국의 서른 다섯 개 주에서도 리벤지 포르노 금지법을 중에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0389, best cost 100.554 + -224.73 = -124.175 over 865 frames.
+107_003_0389 ﻿허 제 이십 칠 조 형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 추정된다고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0466, best cost 70.8249 + -296.595 = -225.77 over 935 frames.
+107_003_0466 하지만 이 도마뱀은 어떻게 중력을 거슬러 다리에서부터 몸을 거쳐 입까지 물을 끌어 올릴 수 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0571, best cost 86.6004 + -219.99 = -133.389 over 773 frames.
+107_003_0571 그러나 그 논의가 한국인의 부족함으로 흘러가는 것을 의도하진 않았다고 설명에 쓴다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0641, best cost 142.331 + -520.017 = -377.686 over 1498 frames.
+107_003_0641 이 법은 구상단계에서부터 기업의 자율성을 해친다는 비판은 물론 진짜로 능력이 있는 여성은 쿼터제 없이도 승진한다거나 다수가 아닌 특권층 여성만 혜택을 본다는 반대 의견에 분이 찼다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0643, best cost 152.429 + -545.498 = -393.068 over 1627 frames.
+107_003_0643 오는 삼십 일 국회 본회의에서 건보 개편안을 확정하면 당장 내년 칠 월부터 바뀐 보험료를 내야 하고 유예 기간이 끝나는 이천 이십 이 년부터는 대폭 변화가 있을 예정인 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0678, best cost 41.8535 + -174.956 = -133.102 over 605 frames.
+107_003_0678 컨테이너 박스 같은 공간을 내주는 곳도 여러 곳이 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0680, best cost 134.17 + -462.851 = -328.68 over 1398 frames.
+107_003_0680 바다의 물결은 남해 먼바다와 제주도 전 해상에서 이 쩜 공 사 쩜 공 미터로 매우 높게 일겠고 그 밖의 해상에서는 영 쩜 오 이 쩜 오 미터로 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0823, best cost 56.7682 + -259.445 = -202.677 over 825 frames.
+107_003_0823 이런 문제는 최근 흔히들 말하는 작은 결혼식에 대한 이해의 문제에서부터 시작한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0872, best cost 78.2483 + -210.561 = -132.312 over 731 frames.
+107_003_0872 일본은 아무리 사죄해도 충분하지 않을 만큼 막대한 범죄를 한국에 저질렀을 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0934, best cost 42.7431 + -173.418 = -130.675 over 604 frames.
+107_003_0934 이들 작품은 그의 인생을 바꿨고 오늘의 그를 있게 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_0999, best cost 81.6261 + -241.816 = -160.19 over 860 frames.
+107_003_0999 그러면 연락을 받은 수취 은행에서 계좌 주인에게 전화를 걸어 돈을 돌려 달라고 요청한 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1076, best cost 90.1915 + -324.74 = -234.548 over 1103 frames.
+107_003_1076 지금 그 어디에도 결정을 할 때 문재인 당시 비서실장이 북한의 지시를 받고 했다 결재를 받고 했다는 건 없어요 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1127, best cost 95.9398 + -216.924 = -120.984 over 781 frames.
+107_003_1127 ﻿눈은 상품 배송에 드론을 이용하겠다며 아마존 프라임에어 계획을 발표에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1274, best cost 102.248 + -367.533 = -265.285 over 1093 frames.
+107_003_1274 반면 여권이 좌편향의 표적으로 삼은 칠 종의 검정 한국사 검정교과서는 주체사상의 실체가 아닌 비판적 소개에 집중 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1282, best cost 78.4336 + -251.258 = -172.825 over 826 frames.
+107_003_1282 넣으면 고소한 향이 나지만 많이 끓이면 쓴맛이 날 수 있으니까 마지막에 살짝만 주세요 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1374, best cost 76.6309 + -194.681 = -118.05 over 671 frames.
+107_003_1374 특히 올해 들어 성범죄 공무원에 감경 비율이 크게 늘어 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1434, best cost 68.5278 + -302.552 = -234.024 over 935 frames.
+107_003_1434 하지만 왕 회장은 로이드리스트 인터뷰에서 상황이 어떻든 용선료 인하를 받아들일 수 없다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1507, best cost 108.379 + -292.264 = -183.885 over 1127 frames.
+107_003_1507 중국은 이밖에 만재배수량 이천 에서 사천 팔백 톤에 이르는 상륙함도 다수 보유하고 있는 등 상륙하면 이 위 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1563, best cost 40.4821 + -174.897 = -134.415 over 623 frames.
+107_003_1563 뇌 조직 일 그램에 수백만 개가 쌓여 있기도 했습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1571, best cost 122.958 + -474.207 = -351.249 over 1385 frames.
+107_003_1571 또한 이른바 과도기에 있는 나라들 특히 동유럽의 나라들과 구소련의 공화국들에 살고 있는 사람들 중에도 영양 부족 상태에 있는 사람이 이천 칠백 만 명이나 틉니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1669, best cost 140.663 + -424.267 = -283.604 over 1335 frames.
+107_003_1669 태 편 스마트일자리 프로젝트로 사 차 산업혁명 준비 저성장 늪에 빠진 대한민국이 재도약하기 위해 사 차 산업혁명 물결 속에서 어떤 전략을 취해야 같아요 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1703, best cost 82.1555 + -267.765 = -185.61 over 843 frames.
+107_003_1703 영국 돈인 파운드화 가치도 브렉시트 쪽으로 결론이 나지 않는 것이라는 기대 속에 계속 올랐다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1795, best cost 72.6533 + -339.377 = -266.724 over 992 frames.
+107_003_1795 아직 사각지역에서 버려지는 아이들과 제도 속에 포함되지 못하는 아이들에 대한 특별한 조치는 제대로 이루어질 필요가 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1897, best cost 82.3298 + -137.663 = -55.3336 over 600 frames.
+107_003_1897 뒤에서 단란하게 가정을 꾸리며 행복하게 잘 살아서 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1900, best cost 81.1639 + -262.603 = -181.439 over 907 frames.
+107_003_1900 홍 지사는 전국 광역지방자치단체 최초로 채무 제로를 달성하겠다는 목표도 밝혔고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_1969, best cost 100.051 + -432.807 = -332.756 over 1288 frames.
+107_003_1969 이 의원은 곡성은 부모님께서 지금도 살고 계시는 저의 영원한 고향이자 마음의 지역구라면서도 순천 발전을 위한 큰 구상을 갖고 있다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2053, best cost 140.711 + -529.716 = -389.005 over 1581 frames.
+107_003_2053 그는 또 이정현 새누리당 대표가 자기 당 비박계에게 대선주자 지지율을 다 합쳐도 십 퍼센트도 안 되는데 떠든다고 독설을 퍼부었다며 이건 분당하자는 통첩으로 보인다고 비난 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2085, best cost 50.0629 + -213.78 = -163.717 over 691 frames.
+107_003_2085 또한 오래 근무하지 않고 일찍 청와대를 나온 이유도 석연치 않다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2127, best cost 121.767 + -379.652 = -257.884 over 1206 frames.
+107_003_2127 정부가 이천 십 삼 년 소득공제를 세액공제로 바꾸고 올해 들어 연말정산 파동이 커지자 저소득층 및 중산층 세금을 갚으면서 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2157, best cost 46.0331 + -183.86 = -137.827 over 622 frames.
+107_003_2157 후속 대책으로 판매 제품 전량을 신제품으로 교환하기로 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2182, best cost 138.609 + -386.042 = -247.433 over 1250 frames.
+107_003_2182 앞으로 한 일 관계가 어떻게 되어야 하느냐는 질문에 다른 나라와 똑같이 전략적으로 생각해야 한다는 응답이 삼십 칠 쩜 팔 퍼센트로 가장 많다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2190, best cost 68.6371 + -309.661 = -241.024 over 926 frames.
+107_003_2190 경찰의 카메라에 담긴 화면으로는 라이드가 경찰에게 어떤 위협을 가했는지는 정확하게 드러나지 않고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2270, best cost 131.893 + -451.49 = -319.597 over 1327 frames.
+107_003_2270 사람들은 호박 구슬을 실에 꿰어 목에 걸고 다니면 머리와 목과 인후의 통증이 완화되고 호박으로 만든 팔찌는 류머티즘을 앓고 있는 사람들에게 도움이 된다고 밀어 쓴다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2289, best cost 76.6195 + -224.971 = -148.352 over 834 frames.
+107_003_2289 또 밀항 시도 가능성도 열어두고 수사를 전방위적으로 확대하고 있는 상황에 다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2351, best cost 112.073 + -385.578 = -273.505 over 1159 frames.
+107_003_2351 김씨는 사고 당일 약을 먹은 사실이 없다고 진술 경찰은 김씨의 채혈과 소변 등을 국립과학수사연구원에 분석을 의뢰한 텐데 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2513, best cost 78.4498 + -280.976 = -202.526 over 916 frames.
+107_003_2513 동 지에서는 인식 부족과 시력 전문가의 부족을 인도가 안고 있는 문제의 주요 원인으로 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2528, best cost 130.074 + -385.079 = -255.005 over 1290 frames.
+107_003_2528 편도선 줄기세포는 수술 후에 버려지는 편도선 조직에서 추출하기 때문에 다른 줄기세포와 달리 공여자의 부가적인 고통이 없는 게 특징일 다 해 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2546, best cost 85.8739 + -291.907 = -206.033 over 928 frames.
+107_003_2546 업무 강도가 센 직업이라 야근과 주말근무를 할 때도 많아서 입주돌보미를 구했는데 비용이 갔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2619, best cost 87.7289 + -253.777 = -166.048 over 859 frames.
+107_003_2619 그런 태도를 반복적으로 접하는 사람들은 아영씨를 존중하지도 조심스럽게 대하지도 않게 들렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2653, best cost 89.5675 + -273.948 = -184.381 over 887 frames.
+107_003_2653 한편 새누리당은 팔 일 국회의원 연찬회를 통해 새 당명을 자유한국당으로 결정 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2668, best cost 133.99 + -486.606 = -352.616 over 1465 frames.
+107_003_2668 그 누군가가 방탄소년단이 되고 우리가 더 큰 목소리로 그 문제들에 관해 얘기할 수 있게 된다면 더욱 큰 힘을 가지게 될 것이라며 음악적 주제의식에 대해 솔직히 답했다고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2714, best cost 53.5002 + -185.209 = -131.709 over 686 frames.
+107_003_2714 어제 이 소식 듣고 많이 놀라셨을 것 같아요 많은 분들이 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2720, best cost 63.2092 + -219.223 = -156.014 over 815 frames.
+107_003_2720 ﻿요 요금까지 정확히 알고 있어서 사람들을 쉽게 속일 수 있었습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2749, best cost 74.266 + -337.429 = -263.163 over 1029 frames.
+107_003_2749 일각에서는 급격히 팽창한 신규 시장이 트렌드의 변화로 해당 시장과 관련시장을 위축 시킨다는 염려의 시각도 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2755, best cost 123.582 + -375.721 = -252.139 over 1177 frames.
+107_003_2755 대학 교직원 초봉 삼 천만원대 중견기업 수준서울권 대학 교직원의 초임 수준은 학교마다 다르지만 대체로 중견기업 수준이 다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2793, best cost 76.9135 + -265.793 = -188.879 over 885 frames.
+107_003_2793 시간이 흘러 중국계 인도네시아인이셨던 부모님과 그들의 자녀 다섯 명이 증인이 되어 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2801, best cost 100.369 + -263.816 = -163.447 over 866 frames.
+107_003_2801 최근 청년 실업 등 노동 관련 이슈가 많아 예민한 온라인 분위기에 기름을 부은 꼴이 됐으니 다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2877, best cost 80.6311 + -319.624 = -238.993 over 994 frames.
+107_003_2877 한국 국민은 걱정할 필요가 없다고 했는데 구체적으로 뭘 걱정할 필요가 없다는 얘긴지 저도 잘 이해가 안 돼 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2959, best cost 93.2633 + -295.223 = -201.959 over 934 frames.
+107_003_2959 그 후로 오랫동안 여러 증기선의 선장으로 일하다가 그는 천 구백 구 년에 오십 세를 일기로 사망 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2961, best cost 59.4272 + -195.752 = -136.324 over 707 frames.
+107_003_2961 김씨는 아들 결혼시킬 땐 집 평수를 줄일 각오를 하고 있다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 107_003_2974, best cost 74.1972 + -336.25 = -262.053 over 1029 frames.
+107_003_2974 곧바로 다음달 중남미 순방 때는 성완종 리스트 의혹을 받던 이완구 당시 총리가 전격 사의를 표명하기도 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0030, best cost 103.545 + -384.868 = -281.323 over 1195 frames.
+108_003_0030 공주보와 예당호는 거리가 서른 두 키로미터로 비교적 멀고 사업비도 구백 팔십 팔 억원으로 비교적 많이 든다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0059, best cost 90.8836 + -295.378 = -204.494 over 952 frames.
+108_003_0059 지난 이천 팔 년부터 사 대강을 기록하고 있는 이철재 에코큐레이터가 십 이 일 금강을 빠졌다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0117, best cost 122.005 + -480.81 = -358.805 over 1505 frames.
+108_003_0117 형태로 작성된 성매수자 명단에는 이름 전화번호 직업 성적 취향 타고 온 차량 번호 성매매 여성의 가명 성매매 장소 등이 꼼꼼히 적혀 있었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0175, best cost 80.9611 + -174.984 = -94.0225 over 648 frames.
+108_003_0175 앞서 달리던 대형 트럭을 뒤에서 오던 승용차가 그대로 들이받아 둡니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0177, best cost 65.9223 + -311.169 = -245.247 over 943 frames.
+108_003_0177 모든 주장 입증 방법을 채택할 뿐만 아니라 오히려 사건 초기부터 적극적인 석명준비 명령을 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0389, best cost 107.995 + -251.558 = -143.564 over 917 frames.
+108_003_0389 ﻿그 헌법 제 이십 칠 조 형사피고인은 유죄의 판결이 확정될 때까지는 무죄로 수정 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0408, best cost 127.627 + -504.062 = -376.434 over 1559 frames.
+108_003_0408 십 오 일 서울 광화문 포시즌스호텔 특별대국장에서 이세돌 구 단과 구글의 인공지능 바둑 프로그램 알파고 간 구글 딥마인드 챌린지 매치 오 국이 있었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0471, best cost 128.523 + -368.322 = -239.799 over 1245 frames.
+108_003_0471 시작된 불이 비무장지대를 남하해 도라산전망대 앞까지 내려오자 인근 민통선마을인 통일촌에서도 화재를 구치감에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0473, best cost 163.756 + -588.698 = -424.942 over 1784 frames.
+108_003_0473 이천 십 삼 년 발표한 국가암등록통계에 따르면 한국인의 평균수명인 팔십 일 세까지 생존할 경우 암발병률은 삼십 육 쩜 구 퍼센트에 이를 정도로 암은 흔한 병이 된 상 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0481, best cost 84.0759 + -234.734 = -150.659 over 875 frames.
+108_003_0481 경기 결과에 대해 소청할 것이고 바로 무사시와 재대결을 요구할 것이라고 말이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0496, best cost 117.179 + -456.022 = -338.843 over 1384 frames.
+108_003_0496 단 서로의 이민 의지를 격려하거나 논문 자료 등을 공유해 국가별로 다양하고 까다로운 이민 제도를 공부하기도 하고 월급을 쪼개 이민 적금을 만들기도 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0505, best cost 141.199 + -534.907 = -393.708 over 1683 frames.
+108_003_0505 이십 일 일 서울시교육청에 따르면 이천 십 육 년도 일반직공무원 공개경쟁임용시험에서 남성 응시자 네 명이 양성평등채용목표제의 적용을 받아 추가 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0510, best cost 68.7826 + -236.568 = -167.785 over 800 frames.
+108_003_0510 십 오 일 박근혜 대통령 변호인으로 유영하 변호사가 선임됐다고 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0513, best cost 64.691 + -262.145 = -197.454 over 842 frames.
+108_003_0513 이들 도시 및 다른 스물 다섯 개의 도시에는 각각 이천 만 명 이상의 주민이 살게 될 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0534, best cost 69.4791 + -207.599 = -138.12 over 756 frames.
+108_003_0534 광화문 앞 왕복 팔 차로인 율곡로까지는 지난주와 마찬가지로 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0540, best cost 84.98 + -234.008 = -149.028 over 835 frames.
+108_003_0540 이와 함께 바나나 트렌드를 업은 초코파이 바나나는 사 월 한 달간 이천 만개가 달렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0570, best cost 88.1135 + -208.712 = -120.598 over 762 frames.
+108_003_0570 태 졸업 신규직원의 경우 이 비율이 십 오 쩜 구 퍼센트까지 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0580, best cost 115.493 + -476.731 = -361.238 over 1434 frames.
+108_003_0580 그리고 이 나무는 태즈메이니아 남부 지역에 부는 남극의 바람을 맞으면서도 또한 해안에 위치한 산간 지방의 안개가 많은 환경에서도 무성하게 자라입니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0600, best cost 47.5384 + -210.497 = -162.959 over 677 frames.
+108_003_0600 그러나 다른 이유는 없었는지 다른 물증 확보에도 주력하고 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0604, best cost 83.6624 + -405.305 = -321.642 over 1204 frames.
+108_003_0604 노예로 끌려 온 많은 사람들은 쇠사슬에 묶여 구타를 당하고 낙인이 찍혔으며 그 후 네 킬로미터에 달하는 노예의 길을 걸어가야 했습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0611, best cost 113.405 + -555.522 = -442.118 over 1597 frames.
+108_003_0611 화가 임옥상씨가 십 팔 일 서울 광화문광장에서 열린 문화예술계 블랙리스트 진상규명 및 책임자 처벌과 예술검열을 반대하는 문화예술인들의 예술행동에 참여하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0681, best cost 98.3959 + -317.83 = -219.434 over 1004 frames.
+108_003_0681 삼 분기에만 매출 일 조 이천 구백 십 구 억원 영업이익 육백 십 팔 억원을 울렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0860, best cost 98.8842 + -487.867 = -388.983 over 1435 frames.
+108_003_0860 시간이 흐를수록 피고인 박씨에게 불리한 재판부의 판결이 이어지자 법정 안에 방청객으로 앉아 있던 피고인 박씨의 가족들 사이에서 불만의 소리가 터져 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0894, best cost 67.6987 + -301.293 = -233.594 over 954 frames.
+108_003_0894 알고 보니 남편의 외도를 의심한 부인이 술을 먹은 상태에서 차를 몰다 남편 차를 들이받은 것이었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0923, best cost 82.3494 + -267.306 = -184.956 over 867 frames.
+108_003_0923 ﻿어리석은 생각 중에서도 세상을 더 나은 곳으로 만들고 싶어 하는 것보다 더 어리석은 것은 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0939, best cost 81.9062 + -360.253 = -278.347 over 1099 frames.
+108_003_0939 학습 장애의 증상 가운데는 말을 배우는 것이 늦거나 습관적으로 잘못 발음하거나 어린애 같은 말투를 계속 쓰는 것이 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0955, best cost 82.1542 + -275.81 = -193.655 over 911 frames.
+108_003_0955 이들은 부모가 사망했어도 신고를 하지 않거나 지연해도 과태료나 처벌을 받지 않는다는 점을 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0985, best cost 75.1715 + -274.202 = -199.03 over 905 frames.
+108_003_0985 사람들은 어디를 가든 걸어 다녔고 내가 전혀 알아듣지 못하는 언어인 알바니아어를 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_0986, best cost 44.1748 + -196.507 = -152.332 over 641 frames.
+108_003_0986 짜인 생활비 예산을 이번에는 정해진 수입에 맞춰 조정해야 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1003, best cost 67.4379 + -140.167 = -72.7291 over 625 frames.
+108_003_1003 이건 사실 법 적용을 어떻게 할 것인가의 문제일 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1014, best cost 129.281 + -389.334 = -260.053 over 1240 frames.
+108_003_1014 그런데 누구에는 더 많은 얘기를 나누고 누구에게는 한 마디만 나누고 그러면 그것이 바로 측근이 되고 내가 더 실세다 하는 것들이 생겨나지 하나여서 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1038, best cost 80.6777 + -353.472 = -272.795 over 1068 frames.
+108_003_1038 그러나 한 가지 제가 가져갈 수 없는 짐이 있다며 저에게 덧씌워진 호남홀대 호남차별이라는 오해는 부디 거두어 달라 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1073, best cost 114.907 + -367.406 = -252.499 over 1247 frames.
+108_003_1073 아내가 중국에서도 베이징 상하이의 젊은층을 중심으로 크래프트 맥주가 선풍적인 인기를 얻고 있다고 파이낸셜타임스가 져야 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1081, best cost 98.158 + -253.198 = -155.04 over 854 frames.
+108_003_1081 북한이 괌을 사정권으로 하는 무수단 미사일을 쏘아 올린 지난달 이십 이 일 직전 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1090, best cost 112.437 + -456.612 = -344.175 over 1397 frames.
+108_003_1090 홍 지사는 지난 팔 일 고 성완종 전 경남기업 회장으로부터 불법 정치자금을 받은 혐의로 일 심에서 실형을 선고받았지만 법정 구속은 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1139, best cost 131.138 + -460.205 = -329.067 over 1413 frames.
+108_003_1139 현재 그리스에 머물고 있는 그는 또 서울대 왔던 외국인 교수들 줄줄이 떠난다는 내용의 한 신문기사를 인용하며 이 사람들의 마음을 백 퍼센트 이해하고 농가 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1146, best cost 100.716 + -359.652 = -258.936 over 1080 frames.
+108_003_1146 해지 변경은 은행 영업일 오전 아홉 시부터 오후 다섯 시까지이며 자동이체 조회 서비스는 오전 아홉 시부터 오후 열 시에 갔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1206, best cost 123.38 + -468.427 = -345.046 over 1469 frames.
+108_003_1206 성서를 예수께서 열두 살 때 예루살렘 성전에서 한 행동을 설명한 후에 그분이 마리아와 그의 남편인 요셉과 함께 집으로 돌아가 그들에게 계속 복종했다고 알려 준다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1210, best cost 97.8075 + -365.021 = -267.213 over 1187 frames.
+108_003_1210 인공지능 알파고와 세 번째 대국에서도 집 부족으로 위기를 맞은 이세돌 아홉 단이 하변에 특공대를 투입하는 승부수를 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1250, best cost 136.005 + -482.521 = -346.517 over 1440 frames.
+108_003_1250 최근 잇따르고 있는 트럼프 대통령의 강경한 발언은 북한이 오는 십 오 일 태양절을 맞아 대륙간탄도탄급 미사일 실험 발사를 앞두고 있기 때문으로 분석 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1283, best cost 57.2582 + -185.776 = -128.518 over 728 frames.
+108_003_1283 이들은 이튿날 새벽 세 시 삼십 분까지 네 시간 가까이 침묵을 깬 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1325, best cost 89.9117 + -305.36 = -215.449 over 1001 frames.
+108_003_1325 하느님께서는 단지 배우자에게 만족하지 못하는 것과 같은 사소한 이유로 이혼하려는 것을 아니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1373, best cost 134.478 + -422.641 = -288.163 over 1370 frames.
+108_003_1373 ﻿이 올해 강남권 재건축 아파트 일 만 삼천 가구가 이주에 나설 예정이어서 연립 다세대주택으로 이주하는 세입자들은 더욱 늘어날 것으로 전망이 나온다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1399, best cost 103.989 + -358.491 = -254.502 over 1108 frames.
+108_003_1399 메르스에 감염된 서울 대형 병원 의사가 무려 천 오백 명이 넘는 사람들을 직 간접으로 접촉했다는 소식이 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1439, best cost 85.1953 + -262.876 = -177.681 over 946 frames.
+108_003_1439 ﻿상 당국은 언론매체 전단지 등을 통해 경각심을 촉구하는 특별 예방 활동에 나섰습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1442, best cost 130.215 + -256.577 = -126.361 over 965 frames.
+108_003_1442 혹시 사업비도 이천 십 사 년 노숙인 외투 지원비 천 백 만원을 지출한 것이 유일한 실적 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1444, best cost 83.0539 + -381.027 = -297.973 over 1252 frames.
+108_003_1444 한 시민은 이날 광화문광장에 박근혜 일당은 청와대를 비우그라 한국하야하자 제약이라고 쓰인 손팻말을 들고 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1450, best cost 68.5829 + -278.527 = -209.944 over 1026 frames.
+108_003_1450 따라서 남편이 아내를 신체적으로 자주 학대한다면 피해자는 별거할 수 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1548, best cost 90.4744 + -285.602 = -195.128 over 1001 frames.
+108_003_1548 다수의 선정작을 가려낸 재난안전교육 및 한글 활용 등 여타 부문과 대조를 이루는 분이나 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1573, best cost 117.064 + -365.751 = -248.686 over 1199 frames.
+108_003_1573 그로 투명한 대표는 임금 격차의 진짜 원인은 양육 시설이나 전일제 수업 부족 등 기업 바깥에 있다며 정부에 책임을 돌렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1648, best cost 107.418 + -382.709 = -275.291 over 1168 frames.
+108_003_1648 당초 이를 근거로 발사에 실패한 것 아니냐는 관측도 나왔지만 우리 군 당국과 북한은 위성이 우주궤도 진입에 성공했다고 발표에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1667, best cost 105.329 + -296.962 = -191.633 over 1059 frames.
+108_003_1667 십 일 은 윈도 십 에 보조 브라우저로 탑재되어 있으며 이천 이십 삼 년 지원이 종료될 예정이라고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1739, best cost 87.033 + -244.204 = -157.171 over 829 frames.
+108_003_1739 조 사무총장은 다른 항공사들 같으면 곤란하다 우리도 힘들다고 했을 만한 상황에 왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1774, best cost 135.178 + -491.703 = -356.525 over 1595 frames.
+108_003_1774 십 분의 준비시간을 거친 뒤 면집위원 앞에서 오 분 이내에 주제에 맞는 자신의 의견을 실제사례나 경험 등을 곁들여 자유롭게 발표하면 된다고 인사혁신처는 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1840, best cost 70.2818 + -260.565 = -190.283 over 843 frames.
+108_003_1840 이 가운데 뛰어나게 훌륭한 것들 몇 개는 전시될 것이지만 나머지는 다시 묻히게 될 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1847, best cost 70.0851 + -207.733 = -137.647 over 741 frames.
+108_003_1847 지에 실린 기사들을 여러 번 다시 읽고 카세트테이프도 여러 번 주었습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1864, best cost 70.5597 + -226.569 = -156.009 over 762 frames.
+108_003_1864 그는 호남지역의 원심력 강화와 관련 호남은 언제나 시대의 기다렸다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1945, best cost 75.8718 + -146.559 = -70.6876 over 634 frames.
+108_003_1945 ﻿그 대구의 낮 최고기온은 이십 육 로 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1953, best cost 138.429 + -258.191 = -119.762 over 977 frames.
+108_003_1953 신 때 기회인 택지공급을 크게 줄어드는 것은 기사들이 피로 누적 등을 이유로 야간 운행을 집필 섰다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1960, best cost 67.5968 + -196.77 = -129.173 over 694 frames.
+108_003_1960 ﻿아 겨울이라고 치면 이제는 일 월 한 달을 바짝 긴장해야 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1970, best cost 91.8866 + -262.512 = -170.625 over 1020 frames.
+108_003_1970 이러한 투명한 구체들의 운동으로 행성들과 별들의 운동을 설명할 수 있다고 생각한다고 쓴다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1978, best cost 74.0244 + -347.787 = -273.762 over 1050 frames.
+108_003_1978 이처럼 손 전 고문에게 야권 인사들의 발길이 이어지는 것은 그가 야권에서 가진 현실적 영향력 때문이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_1989, best cost 58.873 + -244.12 = -185.247 over 757 frames.
+108_003_1989 특히 이 위원장은 김대중 정신은 누구도 사유화 할 수 없고 독점해선 안 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2004, best cost 97.6938 + -301.803 = -204.109 over 1191 frames.
+108_003_2004 이런 요청서를 받고도 의 주민등록번호와 주소 등 개인정보가 담긴 통신자료를 검찰에 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2086, best cost 120.142 + -493.197 = -373.055 over 1559 frames.
+108_003_2086 이천 십 년 삼 월 이십 육 일 군 장병 마흔 여섯 명의 희생을 가져온 천안함 침몰은 북한의 어뢰 공격 때문이었다는 법원의 첫 판단이 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2110, best cost 111.289 + -524.633 = -413.344 over 1514 frames.
+108_003_2110 이러한 조사 결과는 종교 역사 수업을 통해 종교를 바꾸게 하려는 것은 아닌가 하는 의심을 드러내는 것이거나 학교는 종교가 완전히 배제된 곳이어야 한다는 견해를 반영하는 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2111, best cost 44.6322 + -197.646 = -153.014 over 651 frames.
+108_003_2111 이러한 관습에는 화합을 중시하는 카메룬의 문화가 스며 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2113, best cost 114.714 + -494.579 = -379.866 over 1522 frames.
+108_003_2113 그는 기득권 양당인 새누리당과 더민주는 이 불법사태의 공동 책임자이며 피해자는 국민과 신진 출마자들이라며 거대양당의 기득권 담합을 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2122, best cost 97.0547 + -222.692 = -125.638 over 873 frames.
+108_003_2122 ﻿아 신임 대사를 파견할 때 상대국에 관례적으로 사전 동의를 받는 것을 말았다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2125, best cost 70.6393 + -235.801 = -165.161 over 814 frames.
+108_003_2125 실제 비전을 향해 나아갈 수 있는 방향과 좀 더 현실적인 단계를 잡아 나가야 한다고 생각해야 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2149, best cost 57.3447 + -219.712 = -162.367 over 774 frames.
+108_003_2149 그와 동시에 그러한 남자는 스스로 여호와 하느님을 불쾌하시게 하는 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2180, best cost 76.0173 + -200.294 = -124.276 over 798 frames.
+108_003_2180 이십 이 일 브뤼셀 말베이크역 주변 도로가 경찰 차량으로 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2185, best cost 74.6513 + -346.006 = -271.354 over 1181 frames.
+108_003_2185 해 공군및 해병대 특수부대들을 통합 관리하는 통합특수전사령부 예하 병력의 급증 때문이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2220, best cost 107.42 + -437.774 = -330.354 over 1337 frames.
+108_003_2220 보도에 따르면 박 의원실 소속 사 급 보좌관에 문창준이 등록돼 있지만 실존 인물이 아니고 박 의원의 둘째 아들 이모 씨가 문씨 역할을 해야 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2234, best cost 55.225 + -162.517 = -107.292 over 588 frames.
+108_003_2234 아마 상어만큼 공포를 느끼게 하는 동물도 드물 것이 아니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2308, best cost 58.0064 + -145.271 = -87.265 over 605 frames.
+108_003_2308 사전에 몰랐던 것은 여당도 마찬가지 였던 것으로 보고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2313, best cost 100.247 + -492.969 = -392.723 over 1417 frames.
+108_003_2313 최순실 게이트의 최대 미스터리는 어떻게 박근혜 대통령은 최태민 목사로부터 대를 이어 딸 최순실씨에게도 의견을 묻고 도움을 받는 관계가 될 수 있었느냐는 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2321, best cost 85.6122 + -208.681 = -123.069 over 756 frames.
+108_003_2321 강력히 응징하고 대화의 문은 열어 놓을 것이라고 단호한 입장을 나타났다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2346, best cost 95.9156 + -328.303 = -232.387 over 1042 frames.
+108_003_2346 각각의 민족들은 고유의 관습을 갖고 있으며 특유의 의상 예술 건축 양식을 갖고 있는 경우도 맞습니까 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2358, best cost 98.7171 + -461.614 = -362.897 over 1368 frames.
+108_003_2358 유족은 옛날에는 힘들었지만 후임이 들어와 좋다며 기분 좋게 복귀했던 아이가 부대 복귀 한 시간여 만에 시신으로 발견된 게 납득되지 않는다고 허망해 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2364, best cost 39.2497 + -171.494 = -132.244 over 561 frames.
+108_003_2364 중앙 공격은 도외시하고 실리를 챙기는 데 주력하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2373, best cost 68.8243 + -218.74 = -149.916 over 748 frames.
+108_003_2373 관심이 있으면 저작권을 사서 줄거리를 바탕으로 각본을 쓸 수 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2454, best cost 102.879 + -397.753 = -294.875 over 1268 frames.
+108_003_2454 현장을 줄곧 지켜보던 주민 박모씨는 옆집에서 우는 아이의 소리를 들었는데 혹시 보복을 당할까봐 신고를 못했다는 얘기를 들었다고 터져 나왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2459, best cost 98.3113 + -359.843 = -261.531 over 1127 frames.
+108_003_2459 그래서 결국 죽음을 선택한 그런 사건도 있었는데 이런 문제를 해결하기 위해서는 부양의무자 기준이 폐지되지 않고는 가능하지 않다고 모릅니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2498, best cost 118.219 + -367.528 = -249.309 over 1301 frames.
+108_003_2498 계속 머리 쓰다듬어주시고 손 잡아주시고 밥은 먹었냐면서 밥 먹자고 밥 먹고 얘기 좀 하자고 해 주신 분이 제일 인상 있었어요 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2519, best cost 92.4518 + -170.974 = -78.5225 over 787 frames.
+108_003_2519 더 하면 증거가 아무리 많아도 납득하지 않을 과학자들도 있는 것 같더니 데다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2538, best cost 78.0106 + -324.388 = -246.377 over 1005 frames.
+108_003_2538 같은 간호부에서 두 명 이상 임신 계획이 있을 땐 이렇게 내가 먼저 할 테니 넌 그다음에 해라는 식으로 순서를 정하는 거죠 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2551, best cost 85.8575 + -234.982 = -149.124 over 875 frames.
+108_003_2551 ﻿허 양심적 병역거부에 대한 위헌 법률심판은 올가을께 내려질 것으로 보고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2577, best cost 37.932 + -167.486 = -129.554 over 562 frames.
+108_003_2577 가난한 자의 코카인이라는 별칭이 붙은 이유도 이 때문이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2631, best cost 96.5714 + -309.365 = -212.794 over 1064 frames.
+108_003_2631 이번에도 전국적으로 돌풍 천둥 번개가 동반되겠고 곳에 따라 여든 밀리미터 가량 내려 비의 양도 많기 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2693, best cost 144.074 + -486.755 = -342.681 over 1613 frames.
+108_003_2693 중국 주불대사는 일 일 미셀 카도 파리 경찰청장을 찾아 현지 경찰에 의해 오십 대 중국인 남성이 사살당한 사건을 철저히 조사 진상을 규명해달라고 요청했다는 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2698, best cost 59.1864 + -150.01 = -90.8232 over 549 frames.
+108_003_2698 또 적절하지 않다 이런 비판은 피하기는 어려울 것 갔습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2720, best cost 61.8026 + -190.849 = -129.047 over 677 frames.
+108_003_2720 ﻿요 요금까지 정확히 알고 있어서 사람들을 쉽게 속일 수 있었습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2725, best cost 99.4845 + -369.174 = -269.689 over 1150 frames.
+108_003_2725 ﻿소 입장에선 멀지 않은 곳에 다른 쇼핑 몰들도 많은데 이런 고액의 주차료를 내가며 롯데월드몰을 찾을 이유를 찾기는 쉽지 않다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2726, best cost 87.1161 + -253.173 = -166.057 over 883 frames.
+108_003_2726 지난달 판매량은 전월 대비 일 쩜 구 퍼센트 감소해 두 달 연속 하락세를 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2728, best cost 108.185 + -277.476 = -169.291 over 937 frames.
+108_003_2728 ﻿일제 빼앗긴 원장이 분노에 찬 목소리로 우리는 곡소리가 가득한데 너희는 노랫소리가 가득 하다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2813, best cost 80.8067 + -289.193 = -208.386 over 938 frames.
+108_003_2813 해외 진출 이후 국내에서 제공하던 서비스를 여기서 도입해 계약처로부터 다양한 반응을 없었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2826, best cost 85.8647 + -204.763 = -118.898 over 757 frames.
+108_003_2826 지구 상에 우크라이나와 우간다만큼이나 서로 다른 곳은 아마 거의 없을 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2833, best cost 71.1552 + -238.022 = -166.867 over 832 frames.
+108_003_2833 ﻿밥 후쿠시마 현의 소마에 있는 여호와의 증인 회중에서 장로로 일하고 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2849, best cost 90.5409 + -350.254 = -259.713 over 1213 frames.
+108_003_2849 중국이 고품질 석유 제품을 국제 수출 시장에 내놓게 되면 국제가격 하락으로 제품 마진이 축소될 수 있다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2853, best cost 69.4256 + -176.26 = -106.835 over 620 frames.
+108_003_2853 마이너스 금리 예치제도 효과를 보완하기 위한 목적 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2885, best cost 115.937 + -423.255 = -307.319 over 1451 frames.
+108_003_2885 지난달 이십 칠 일 막을 내린 월드골프챔피언십에서 우승컵을 들어 올리며 자신이 출전한 최근 세 개 대회에서 우승컵을 들었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2910, best cost 81.9841 + -317.513 = -235.529 over 1028 frames.
+108_003_2910 정부는 비슷한 생활권인 인접 광역자치단체를 묶어 일곱 개의 광역권으로 나눠 주택수요를 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2965, best cost 74.8917 + -351.779 = -276.887 over 1047 frames.
+108_003_2965 예를 들어 타협이 필요하겠지만 만약 국회선진화법이 개정된 이후에 과반수 표결만으로 그 법안이 폐지될 수 있다면 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 108_003_2981, best cost 113.133 + -321.969 = -208.836 over 1138 frames.
+108_003_2981 관계 자는 바이러스를 엄청나게 내뿜는 사람에게서 감염된 경우엔 증세가 심해져 상대적으로 치료가 힘들 수 있다고 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0046, best cost 80.7337 + -230.631 = -149.898 over 823 frames.
+109_003_0046 이 전 회장의 장례식은 별세 시점인 십 사 일을 기준으로 일곱 일장으로 치러야 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0049, best cost 79.4679 + -331.461 = -251.993 over 1027 frames.
+109_003_0049 문신을 제거해 본 경험자들에 따르면 문신은 새길 때보다 지울 때 이 세 배 더 큰 고통을 수반한다고 한다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0080, best cost 75.5762 + -297.052 = -221.476 over 978 frames.
+109_003_0080 전용 공항 시설로 자가용 비행기 업계 비상할까현재 국내 자가용 비행기 업계는 아직 날개를 펴지 못하고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0177, best cost 64.3367 + -308.078 = -243.742 over 907 frames.
+109_003_0177 모든 주장 입증 방법을 채택할 뿐만 아니라 오히려 사건 초기부터 적극적인 석명준비 명령을 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0210, best cost 41.2562 + -188.417 = -147.16 over 671 frames.
+109_003_0210 국내 대학에서 교수로 학생들을 가르쳤고 책도 냈습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0349, best cost 94.6065 + -337.783 = -243.177 over 1045 frames.
+109_003_0349 국감에서 우병우 수석 아들한테 왜 운전병 특혜를 줬어라고 물으니까 거기서 나온 경찰 간부의 대답인 거죠 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0354, best cost 103.071 + -460.944 = -357.874 over 1451 frames.
+109_003_0354 다수의 생각에 반하는 내용의 대자보가 붙더라도 학생들은 반박 대자보를 게재하거나 포스트잇에 자신의 의견을 담아 대자보 곁에 붙여놓지 대자보를 훼손하지는 않는다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0490, best cost 59.1793 + -263.175 = -203.996 over 840 frames.
+109_003_0490 더 이상 도둑을 제압할 필요가 없는 상황에서 거의 분풀이에 가까운 행위를 한 거죠 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0493, best cost 83.4866 + -300.674 = -217.188 over 1001 frames.
+109_003_0493 삼 월 두 주차 주중집계 당시 문재인 황교안 안희정으로 이어지는 백 이십 삼 위 구도가 뒤집어진 것 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0607, best cost 140.143 + -564.722 = -424.58 over 1711 frames.
+109_003_0607 박 시장은 직원들이 알아서 스마트하게 잘 해냈다며 특히 대중교통 이용객 수를 이용한 집회 참가 인원 추산은 빅데이터 성과이자 서울 공무원들의 우수한 관리역량의 승리라고 평가 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0672, best cost 68.0487 + -253.73 = -185.681 over 881 frames.
+109_003_0672 세계 보건 기구의 노화 및 보건 프로그램의 팀장인 알렉상드르 칼라슈는 다음과 같이 합니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0685, best cost 77.4323 + -283.948 = -206.515 over 925 frames.
+109_003_0685 처벌을 모면한 살인자로 묘사하거나 법원이 보복살인을 정당화했다고 비판하는 보도도 있었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0877, best cost 87.9561 + -245.615 = -157.659 over 806 frames.
+109_003_0877 천 구백 구십 칠 년 일 월 한보 철강으로 시작된 도미노식 부도 사태가 발생 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0880, best cost 97.0516 + -144.961 = -47.9099 over 641 frames.
+109_003_0880 ﻿그 통 정보 표시판 등을 통한 홍보도 강하게 든다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_0950, best cost 122.516 + -270.852 = -148.335 over 1074 frames.
+109_003_0950 수상한 파트너는 사임당 빛의 일기 후속으로 오는 오 월 십 일 수요일 밤 열 시 첫 방송 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1165, best cost 83.5356 + -418.702 = -335.166 over 1238 frames.
+109_003_1165 서울 경찰 페이스북안녕하세요라고 인사를 건넨 초등학생은 자신의 어머니가 내일 녹색 어머니 당번이라며 좀 도와주시면 안될까요라고 물었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1169, best cost 76.5556 + -322.229 = -245.673 over 1056 frames.
+109_003_1169 이들 병원은 격리시설 마련 등의 준비를 거친 후 오는 십 오 일부터 순차적으로 안심병원 운영에 들어간다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1175, best cost 136.901 + -333.703 = -196.802 over 1238 frames.
+109_003_1175 묵은지를 먹기 좋게 썰고 기름에 볶아서 각종 재료와 함께 끓이다가 참치를 넣으면 먹음직스러운 찌개가 완성인 때문이다 이 위 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1254, best cost 139.494 + -323.298 = -183.804 over 1293 frames.
+109_003_1254 관영 수사하던 산에는 일 일 공동공갈 혐의로 렌터카 직원 박모씨를 구속하고 소장 김모씨를 불구속 뻔 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1376, best cost 96.4696 + -272.081 = -175.611 over 896 frames.
+109_003_1376 상위 일 퍼센트가 소득 삼 억 구천 만원이 될 동안 하위 이십 퍼센트는 소득이 오 만원 들었으며 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1379, best cost 86.1712 + -224.86 = -138.689 over 763 frames.
+109_003_1379 과거 이천 구 년 이천 십 삼 년 제도 변경때도 비슷한 패턴이 방법 했다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1417, best cost 114.295 + -452.54 = -338.245 over 1495 frames.
+109_003_1417 우리는 그루지야 정부가 이러한 사건들을 수사하고 만인이 지닌 종교적 권리에 대한 존중심을 보장하기 위해 경계 태세를 늦추지 말 것을 촉구하는 바 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1439, best cost 93.3219 + -250.235 = -156.913 over 983 frames.
+109_003_1439 ﻿상 당국은 언론매체 전단지 등을 통해 경각심을 촉구하는 특별 예방 활동에 있었다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1458, best cost 67.9726 + -166.234 = -98.2617 over 627 frames.
+109_003_1458 결국 김 이병을 위해 따로 행정병 자리를 만들어 냈다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1466, best cost 75.849 + -317.038 = -241.189 over 1029 frames.
+109_003_1466 멋진 동물들 중 하나 어쩌면 위풍당당한 사자나 거대한 시베리아호랑이를 안거나 쓰다듬어 보기를 바란 적이 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1574, best cost 91.5849 + -414.864 = -323.279 over 1263 frames.
+109_003_1574 김 담임목사는 소망교회 소속 및 용역업체 직원 여덟 명의 임금 및 수당 일 억 칠백 여만원을 체불했다는 혐의도 받고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1607, best cost 55.4627 + -224.041 = -168.578 over 740 frames.
+109_003_1607 아파트 단지를 순식간에 난장판으로 만든 장본인은 마흔 세 살 이 모 씨 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1639, best cost 56.522 + -208.361 = -151.839 over 761 frames.
+109_003_1639 따라서 호박은 먼 옛날에 살던 나무의 진이 굳어서 화석처럼 된 것이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1655, best cost 59.263 + -277.71 = -218.448 over 856 frames.
+109_003_1655 정권 초기 성장률 끌어올리기에 집착한 나머지 리스크 관리에 소홀했다는 지적이 나온다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1673, best cost 137.636 + -323.722 = -186.086 over 1166 frames.
+109_003_1673 새정치민주연합은 이에 대해 공무원연금 개혁안과 공적연금 강화방안을 방안을 동시에 처리해야 한다고 주장에 왔다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1693, best cost 85.0799 + -257.627 = -172.547 over 903 frames.
+109_003_1693 노력이 든다 하더라도 집 안팎을 깔끔하고 청결하게 유지하기 위해 최선을 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1744, best cost 66.979 + -155.498 = -88.5191 over 808 frames.
+109_003_1744 시가 작아지는 현상의 원인은 골다공증일 가능성이 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1784, best cost 76.3179 + -262.223 = -185.905 over 894 frames.
+109_003_1784 때때로 예상치 못한 일이 일어날 것을 대비해서 시간을 여유 있게 계획하는 것이 도움이 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1821, best cost 75.4469 + -195.312 = -119.866 over 731 frames.
+109_003_1821 삼십 오 세 이상 산모는 느는데출생 후 치료를 받고 있는 지부의 된다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1871, best cost 50.3361 + -231.946 = -181.61 over 740 frames.
+109_003_1871 세 번째는 우병우 민정수석에 대한 수사가 아직은 덜 숙성됐기 때문이다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1956, best cost 58.8997 + -177.647 = -118.747 over 792 frames.
+109_003_1956 사진은 이날 오후 서울 종로구 연합인포맥스 지수 않다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_1972, best cost 74.2261 + -169.202 = -94.9762 over 670 frames.
+109_003_1972 전문가들은 탈북자 사회에서 내놓는 해석은 크게 두 가지가 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2007, best cost 101.307 + -418.834 = -317.527 over 1307 frames.
+109_003_2007 당시 검찰은 김 대표로부터 진경준 검사장과 친구 이상의 관계다 주식 매매를 도와준 것은 보험성 차원이었다는 취지의 진술을 확보한 것으로 알려져 있다 
+LOG (lattice-scale[5.2.88~1392-cc246]:main():lattice-scale.cc:90) Done 371 lattices.
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2032, best cost 131.045 + -452.591 = -321.546 over 1456 frames.
+109_003_2032 이천 십 삼 년 연구원 소속 직원 아홉 명은 이씨에게 당한 성희롱과 폭언에 관한 피해 진술서를 학교에 제출했고 학교 측은 이씨에게 감봉 두 개월의 징계를 내렸다가 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2071, best cost 79.59 + -214.182 = -134.592 over 807 frames.
+109_003_2071 ﻿내 꼴에 프리미엄급 신제품 아이폰 칠 은 오는 구 월쯤 공개될 것으로 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2093, best cost 65.516 + -292.243 = -226.727 over 937 frames.
+109_003_2093 이어 중요 범인 검거를 해도 오 점밖에 못 받는데 홍보 기사가 하나 나면 칠 점을 주고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2129, best cost 64.6822 + -166.169 = -101.487 over 685 frames.
+109_003_2129 책가방 판매 직원 품절된 것은 아니고 아직 한개 남아 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2139, best cost 47.0775 + -164.028 = -116.95 over 588 frames.
+109_003_2139 하지만 그것은 참으로 가슴 설레는 전망이 아닐 수 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2170, best cost 70.9146 + -223.501 = -152.586 over 735 frames.
+109_003_2170 ﻿그 물리학 생의학 공학 교수인 새뮤얼 위클라인 박사는 이렇게 말했습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2221, best cost 128.937 + -516.716 = -387.778 over 1689 frames.
+109_003_2221 김 전 대통령이 정치인들에게 보내줬던 멸치 선물에 대해선 정치적인 찬반을 제쳐놓고 멸치가 한창 잡힐 때니 먹어보라고 주셔서 잘 먹었던 기억이 있다며 고마움을 나타났다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2237, best cost 93.4073 + -346.425 = -253.018 over 1134 frames.
+109_003_2237 폭력적인 비디오 게임을 하면 실제 폭력에 무감각해질 수 있다고 미국 아이오와 주립 대학교의 연구 심리학자들은 바란다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2312, best cost 99.5141 + -445.46 = -345.946 over 1329 frames.
+109_003_2312 최순실 국정농단 사건과 관련해 안봉근 전 청와대 국정홍보비서관이 지난 십 사 일 오전 서울 서초구 서울중앙지검에 출두하고 있다 
+LOG (lattice-add-penalty[5.2.88~1392-cc246]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 371 lattices.
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2328, best cost 136.236 + -501.684 = -365.449 over 1617 frames.
+109_003_2328 제가 이 사고를 접한 이후 철제구조물들을 철거하고 이러는 과정이었다는 걸 보니까 아마도 영업을 계속 못하게 돼서 다른 용도로 공사가 진행이 되던 그런 과정이었던 걸로 보이고 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2337, best cost 88.301 + -437.718 = -349.417 over 1285 frames.
+109_003_2337 카페 이용을 둘러싼 카공족과 일반인들 사이의 갈등을 해결하려면 카페 이용시간과 규칙에 대한 어느 정도의 사회적 합의가 필요하다는 의견이 많다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2563, best cost 53.4741 + -156.244 = -102.77 over 594 frames.
+109_003_2563 다른 사람과 비교할 때 얻을 수 있는 유익이 있습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2598, best cost 88.7469 + -251.755 = -163.008 over 910 frames.
+109_003_2598 정부가 설 연휴가 끝난 직후인 다음 달 이십 오 일부터 금연치료에 대해 건강보험을 지원받는다는 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2610, best cost 76.9627 + -231.412 = -154.449 over 806 frames.
+109_003_2610 김씨는 노지 수박은 요즘이 한창 수확철이기 때문에 일기예보가 중요 않다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2639, best cost 59.7752 + -182.075 = -122.3 over 682 frames.
+109_003_2639 ﻿아 언어폭력과 폭력을 당해 머리가 아파 살 수가 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2679, best cost 52.3672 + -241.383 = -189.016 over 783 frames.
+109_003_2679 결국 피의자와 수사기관의 대결은 필연적으로 불평등할 수밖에 없다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2772, best cost 89.8098 + -309.58 = -219.77 over 1093 frames.
+109_003_2772 재판부는 정씨가 받은 교육 역시 최소한의 업무 안내 판촉활동에 대한 독려일 뿐이라고 결론 내려왔습니다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2805, best cost 105.004 + -442.084 = -337.08 over 1369 frames.
+109_003_2805 노무현 전 대통령을 비하하는 내용의 호두과자 포장재를 사용한 식품업체가 이를 비난한 네티즌을 무더기로 고소했지만 대부분 불기소 처분을 받은 것으로 알려져 있다 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:99) For utterance 109_003_2907, best cost 118.35 + -419.596 = -301.246 over 1397 frames.
+109_003_2907 페이스북 갈무리 이천 십 육 년에는 대구 남부경찰서가 데이트폭력 반대 캠페인을 진행하면서 젊은 여성들을 향해 아예 자신들과 사귀자고 제안했다고 
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:124) Overall cost per frame is -0.213497 = 0.0897231 [graph] + -0.30322 [acoustic] over 371034 frames.
+LOG (lattice-best-path[5.2.88~1392-cc246]:main():lattice-best-path.cc:128) Done 371 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Oct  1 04:49:02 KST 2018, elapsed time 1 seconds

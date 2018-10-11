@@ -1,0 +1,36 @@
+# nnet-show-progress --use-gpu=no exp/nnet/42.mdl exp/nnet/43.mdl ark:exp/nnet/egs/train_diagnostic.egs && nnet-am-info exp/nnet/43.mdl 
+# Started at Fri Sep 28 18:23:40 KST 2018
+#
+nnet-show-progress --use-gpu=no exp/nnet/42.mdl exp/nnet/43.mdl ark:exp/nnet/egs/train_diagnostic.egs 
+LOG (nnet-show-progress[5.2.88~1392-cc246]:SelectGpuId():cu-device.cc:110) Manually selected to compute on CPU.
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:123) At position 0.5, objf per frame is -1.29648
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:134) Total objf change per component is  [ 0.00224046 -0.00200153 0.00725766 -0.00665762 ]
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:145) Parameter differences per layer are  [ 21.3655 31.6079 47.8464 40.3144 ]
+LOG (nnet-show-progress[5.2.88~1392-cc246]:main():nnet-show-progress.cc:153) Relative parameter differences per layer are  [ 0.111248 0.109408 0.133791 0.120934 ]
+nnet-am-info exp/nnet/43.mdl 
+LOG (nnet-am-info[5.2.88~1392-cc246]:main():nnet-am-info.cc:76) Printed info about exp/nnet/43.mdl
+num-components 15
+num-updatable-components 4
+left-context 9
+right-context 7
+input-dim 40
+output-dim 2057
+parameter-dim 5308157
+component 0 : SpliceComponent, input-dim=40, output-dim=360, context=-4 -3 -2 -1 0 1 2 3 4 
+component 1 : FixedAffineComponent, input-dim=360, output-dim=360, linear-params-stddev=0.0259164, bias-params-stddev=0.0581665
+component 2 : AffineComponentPreconditionedOnline, input-dim=360, output-dim=3000, linear-params-stddev=0.184788, bias-params-stddev=0.489187, learning-rate=0.00891251, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 3 : PnormComponent, input-dim = 3000, output-dim = 300, p = 2
+component 4 : NormalizeComponent, input-dim=300, output-dim=300
+component 5 : AffineComponentPreconditionedOnline, input-dim=300, output-dim=3000, linear-params-stddev=0.306356, bias-params-stddev=0.494965, learning-rate=0.00891251, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 6 : PnormComponent, input-dim = 3000, output-dim = 300, p = 2
+component 7 : NormalizeComponent, input-dim=300, output-dim=300
+component 8 : SpliceComponent, input-dim=300, output-dim=900, context=-5 -1 3 
+component 9 : AffineComponentPreconditionedOnline, input-dim=900, output-dim=3000, linear-params-stddev=0.220098, bias-params-stddev=0.49561, learning-rate=0.00891251, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 10 : PnormComponent, input-dim = 3000, output-dim = 300, p = 2
+component 11 : NormalizeComponent, input-dim=300, output-dim=300
+component 12 : AffineComponentPreconditionedOnline, input-dim=300, output-dim=2057, linear-params-stddev=0.428748, bias-params-stddev=0.040479, learning-rate=0.00891251, rank-in=20, rank-out=80, num_samples_history=2000, update_period=4, alpha=4, max-change-per-sample=0.075
+component 13 : FixedScaleComponent, input-dim=2057, output-dim=2057, scales-mean=1, scales-stddev=0.166007
+component 14 : SoftmaxComponent, input-dim=2057, output-dim=2057
+prior dimension: 2057, prior sum: 1, prior min: 3.43086e-05
+# Accounting: time=13 threads=1
+# Ended (code 0) at Fri Sep 28 18:23:53 KST 2018, elapsed time 13 seconds

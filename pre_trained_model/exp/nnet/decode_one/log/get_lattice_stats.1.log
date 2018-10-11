@@ -1,0 +1,7 @@
+# ali-to-phones --write-lengths=true exp/nnet/decode_one/../final.mdl "ark:gunzip -c exp/nnet/decode_one/ali_tmp.1.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/nnet/decode_one/phone_stats.1.gz 
+# Started at Mon Oct  8 03:51:04 KST 2018
+#
+ali-to-phones --write-lengths=true exp/nnet/decode_one/../final.mdl 'ark:gunzip -c exp/nnet/decode_one/ali_tmp.1.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.88~1392-cc246]:main():ali-to-phones.cc:134) Done 1 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Oct  8 03:51:04 KST 2018, elapsed time 0 seconds

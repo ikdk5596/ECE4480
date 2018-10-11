@@ -1,0 +1,70 @@
+# nnet-latgen-faster --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri3/graph/words.txt exp/nnet/final.mdl exp/tri3/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split8/1/utt2spk scp:data/test/split8/1/cmvn.scp scp:data/test/split8/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split8/1/utt2spk ark:exp/tri3/decode_test/trans.1 ark:- ark:- |" "ark:|gzip -c > exp/nnet/decode_test/lat.1.gz" 
+# Started at Mon Oct  1 04:49:05 KST 2018
+#
+nnet-latgen-faster --minimize=false --max-active=7000 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri3/graph/words.txt exp/nnet/final.mdl exp/tri3/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split8/1/utt2spk scp:data/test/split8/1/cmvn.scp scp:data/test/split8/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split8/1/utt2spk ark:exp/tri3/decode_test/trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/nnet/decode_test/lat.1.gz' 
+transform-feats --utt2spk=ark:data/test/split8/1/utt2spk ark:exp/tri3/decode_test/trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split8/1/utt2spk scp:data/test/split8/1/cmvn.scp scp:data/test/split8/1/feats.scp ark:- 
+transform-feats exp/nnet/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+112_003_0107 공정을 위는 이천 십 삼 년 유통산업발전법 개정을 근거로 이 공약이 이행된 것으로 평가 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0107 is 0.370242 over 1006 frames.
+112_003_0108 이천 십 오 년에는 전국 모든 대학을 평가해 오 등급으로 나누고 등급에 따라 정원감축을 주신 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0108 is 0.387274 over 926 frames.
+112_003_0159 ﻿이 대한 주택 보증 입장에서는 손실 가능성을 최소화하기 위해 수수료를 높게 요구할 수밖에 없는 거죠 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0159 is 0.285671 over 1064 frames.
+112_003_0254 공식 순방기간은 육 일부터 구 일까지였지만 이 후보자 부부는 이보다 앞선 사 일 함께 출국해 부인은 칠 일 이 후보자는 구 일 각각 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0254 is 0.380953 over 1293 frames.
+112_003_0335 세수 보는 선수 들기가 중단된 건 예측 할 수 없었던 너울 때문이며 장비 문제는 아니라는 입당 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0335 is 0.293316 over 803 frames.
+112_003_0831 아무 자격과 전문성 없는 비선 최씨가 대외비인 대통령 연설문을 버젓이 받아보고 수정하는 등 국정을 농락한 사실부터 현실에서 일어나리라고 상상하기 어려웠던 일이다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0831 is 0.397819 over 1533 frames.
+112_003_0932 일각에서는 현역 의원의 안 의원 측근 그룹에 대한 견제로 보는 분석도 나왔다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0932 is 0.390291 over 736 frames.
+112_003_0984 아이를 맡길 곳이 없는데 어린이집 측은 몇 달 간 옮길 곳을 찾았지만 주민들이 아이들 소음에 반대하는데다 까다로운 어린이집 설치기준을 맞출 방법이 없었다고 알아야 합니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_0984 is 0.394229 over 1475 frames.
+112_003_1040 새로 길들이기 시작한 유익한 습관이 정착되기까지는 보통 시간이 걸리는데 수주에서 수개월이 걸리기도 합니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1040 is 0.447407 over 1103 frames.
+112_003_1183 하지만 주인들은 사랑을 표현하고 싶은 자신의 욕구를 충족시키느라 애완동물을 돌보는 일에 푹 빠져 드는 것 같았다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1183 is 0.348596 over 1003 frames.
+112_003_1316 목적은 다르지만 결국 모두 명품이 주는 보상심리에서 비롯됐다는 게 전문가들 분석이 다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1316 is 0.357796 over 885 frames.
+112_003_1415 또 계파 가자 인사권 전횡을 할 수 없는 그런 보직을 줘서는 안 돼 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1415 is 0.245396 over 762 frames.
+112_003_1591 당시 정씨 아들로 추정되는 이천 십 오 년생 아이도 있었다고 경찰은 적이 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1591 is 0.351095 over 804 frames.
+112_003_1636 정씨는 금메달을 보여드려도 될까요라며 면접위원들에게 이 메달을 꺼내보였다고 한다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1636 is 0.312046 over 1010 frames.
+112_003_1769 ﻿요 신 총재는 일본의 과거사에 대한 사과와 배상 요구에 대해 그런 부분은 과거에 충분히 이야기가 다 됐던 부분이고 기본적으로 일본 천황이 공식적으로 사과를 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1769 is 0.410777 over 1477 frames.
+112_003_1904 그러면서 이 연구사는 위가 네 개나 되는 소의 소화과정을 보다 자세하게 설명에 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_1904 is 0.287296 over 955 frames.
+112_003_2104 이제 목표한 오백 만원을 채워 은행에 가져가려는데 천장 안에 넣은 손을 아무리 휘저어도 닿는 것이 없었다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2104 is 0.412989 over 952 frames.
+112_003_2156 ﻿내 여건이 가동되는 안락한 열차 안에서 갠 열차의 승객들은 최고의 서비스를 갔습니다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2156 is 0.3197 over 822 frames.
+112_003_2452 서울대 약대 관계자는 약대 입시가 편입으로 바뀐 이후에 약대는 연구의 장이 아니라 직업훈련학교로 전락한 지 오래라고 수출의 했다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2452 is 0.397256 over 1185 frames.
+112_003_2629 그러니까 우리가 상상해 보시면 아시겠지만 우리가 해외 나가면 기껏 갖고 나가는 일만 불이 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2629 is 0.315821 over 883 frames.
+112_003_2713 학교는 시설 관리에 따르는 잡다한 업무가 없어지고 사업자는 일정 기간 수익을 보장 받을 수 있었다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2713 is 0.452127 over 878 frames.
+112_003_2749 일각에서는 급격히 팽창한 신규 시장이 트렌드의 변화로 해당 시장과 관련시장을 위축 시킨다는 염려의 시각도 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2749 is 0.432526 over 1085 frames.
+LOG (apply-cmvn[5.2.88~1392-cc246]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 26 utterances, errors on 0
+112_003_2826 지구 상에 에서 우크라이나와 우간다만큼이나 서로 다른 곳은 아마 거의 없을 것이다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2826 is 0.275265 over 841 frames.
+112_003_2840 이번 신동욱 앵커의 클로징 멘트는 그런 면에서 더욱 상층 적이 있다 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2840 is 0.246839 over 715 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -87.5573 over 27290 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 26 utterances; 0 had errors.
+112_003_2870 그러면 홍승희도 이석기 추종세력이지 억울함을 이해하는 것과 추종하는 건 다른 것 같을 데 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2870 is 0.285372 over 1598 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average logdet is -0.498694 over 27290 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 26 utterances; 0 had errors.
+112_003_2940 이러한 계획에 의해서 강물을 뺀다 정치권 물론 그렇다고 수문을 전부 다 활짝 연 것은 아니다 이 위 
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance 112_003_2940 is 0.257086 over 1496 frames.
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:181) Time taken 43.5354s: real-time factor assuming 100 frames/sec is 0.159529
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:184) Done 26 utterances, failed for 0
+LOG (nnet-latgen-faster[5.2.88~1392-cc246]:main():nnet-latgen-faster.cc:186) Overall log-likelihood per frame is 0.351319 over 27290 frames.
+# Accounting: time=45 threads=1
+# Ended (code 0) at Mon Oct  1 04:49:50 KST 2018, elapsed time 45 seconds

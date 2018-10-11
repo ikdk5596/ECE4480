@@ -1,0 +1,22 @@
+# ali-to-post "ark:gunzip -c exp/tri3_ali/ali.61.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3_ali/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp/tri3_ali/final.mdl "ark,s,cs:utils/subset_scp.pl --quiet 91 data/train/split109/61/feats.scp | apply-cmvn  --utt2spk=ark:data/train/split109/61/utt2spk scp:data/train/split109/61/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split109/61/utt2spk ark:exp/tri3_ali/trans.61 ark:- ark:- | splice-feats --left-context=4 --right-context=4 ark:- ark:- |" ark,s,cs:- exp/nnet/lda.61.acc 
+# Started at Fri Sep 28 17:59:52 KST 2018
+#
+ali-to-post 'ark:gunzip -c exp/tri3_ali/ali.61.gz|' ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3_ali/final.mdl ark:- ark:- 
+acc-lda --rand-prune=4.0 exp/tri3_ali/final.mdl 'ark,s,cs:utils/subset_scp.pl --quiet 91 data/train/split109/61/feats.scp | apply-cmvn  --utt2spk=ark:data/train/split109/61/utt2spk scp:data/train/split109/61/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/nnet/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split109/61/utt2spk ark:exp/tri3_ali/trans.61 ark:- ark:- | splice-feats --left-context=4 --right-context=4 ark:- ark:- |' ark,s,cs:- exp/nnet/lda.61.acc 
+splice-feats --left-context=4 --right-context=4 ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split109/61/utt2spk ark:exp/tri3_ali/trans.61 ark:- ark:- 
+transform-feats exp/nnet/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split109/61/utt2spk scp:data/train/split109/61/cmvn.scp scp:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (ali-to-post[5.2.88~1392-cc246]:main():ali-to-post.cc:73) Converted 178 alignments.
+LOG (apply-cmvn[5.2.88~1392-cc246]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 91 utterances, errors on 0
+LOG (weight-silence-post[5.2.88~1392-cc246]:main():weight-silence-post.cc:95) Done 178 posteriors.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -87.5573 over 64891 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 91 utterances; 0 had errors.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:158) Overall average logdet is 3.93711 over 64891 frames.
+LOG (transform-feats[5.2.88~1392-cc246]:main():transform-feats.cc:161) Applied transform to 91 utterances; 0 had errors.
+LOG (acc-lda[5.2.88~1392-cc246]:main():acc-lda.cc:117) Done 91 files, failed for 0
+LOG (acc-lda[5.2.88~1392-cc246]:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Fri Sep 28 17:59:54 KST 2018, elapsed time 2 seconds
