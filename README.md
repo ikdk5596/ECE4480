@@ -2,6 +2,9 @@
 
 데이터 다운로드용 git repository
 
+질문이 있을때는 Issues란 이용
+
+
 
 # Contact
 작성자 : DSP 연구실 김상홍
