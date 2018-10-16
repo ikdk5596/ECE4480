@@ -46,7 +46,7 @@ if __name__ == '__main__':
     parser.add_argument("--input", "-i", dest='input', type=str, help="Input your wav")
     args = parser.parse_args()
     if args.input is None:
-        print('Usage : python speech_recognition.py -t "input file"')
+        print('Usage : python speech_recognition.py -i "input file"')
         sys.exit(1)
     else:
         main(args)
