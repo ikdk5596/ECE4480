@@ -30,8 +30,6 @@ def main(args):
         headers={"Content-Type": "application/json; charset=UTF-8"},
         body=json.dumps(requestJson)
     )
-
-    print("error?")
     data = response.data
     data = data.decode("utf-8")
 
