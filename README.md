@@ -14,6 +14,8 @@ speech_synthesis.py
 업로드 완료
 
 # 10/29/2018 수정내용
+Install_kaldi.mp4 제거
+
 아나콘다에서 audio input output을 사용하는 방법 및 해당 python 코드 작성
 
 conda/(main.py, create.py, audio.py) 생성
