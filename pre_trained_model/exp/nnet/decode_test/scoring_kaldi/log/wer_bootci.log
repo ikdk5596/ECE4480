@@ -1,6 +1,0 @@
-# compute-wer-bootci ark:exp/nnet/decode_test/scoring_kaldi/test_filt.txt ark:exp/nnet/decode_test/scoring_kaldi/penalty_1.0/19.txt > exp/nnet/decode_test/scoring_kaldi/wer_details/wer_bootci 
-# Started at Mon Oct  1 04:50:50 KST 2018
-#
-compute-wer-bootci ark:exp/nnet/decode_test/scoring_kaldi/test_filt.txt ark:exp/nnet/decode_test/scoring_kaldi/penalty_1.0/19.txt 
-# Accounting: time=0 threads=1
-# Ended (code 0) at Mon Oct  1 04:50:50 KST 2018, elapsed time 0 seconds

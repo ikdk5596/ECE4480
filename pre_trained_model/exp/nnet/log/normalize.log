@@ -1,9 +1,0 @@
-# nnet-normalize-stddev exp/nnet/final.mdl exp/nnet/final.mdl 
-# Started at Sat Sep 29 00:32:50 KST 2018
-#
-nnet-normalize-stddev exp/nnet/final.mdl exp/nnet/final.mdl 
-LOG (nnet-normalize-stddev[5.2.88~1392-cc246]:main():nnet-normalize-stddev.cc:160) Normalized component 2
-LOG (nnet-normalize-stddev[5.2.88~1392-cc246]:main():nnet-normalize-stddev.cc:160) Normalized component 5
-LOG (nnet-normalize-stddev[5.2.88~1392-cc246]:main():nnet-normalize-stddev.cc:160) Normalized component 9
-# Accounting: time=0 threads=1
-# Ended (code 0) at Sat Sep 29 00:32:50 KST 2018, elapsed time 0 seconds

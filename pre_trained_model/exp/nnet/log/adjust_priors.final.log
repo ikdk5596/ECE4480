@@ -1,9 +1,0 @@
-# nnet-adjust-priors exp/nnet/final.mdl exp/nnet/post.840.vec exp/nnet/final.mdl 
-# Started at Sat Sep 29 00:34:20 KST 2018
-#
-nnet-adjust-priors exp/nnet/final.mdl exp/nnet/post.840.vec exp/nnet/final.mdl 
-LOG (nnet-adjust-priors[5.2.88~1392-cc246]:PrintPriorDiagnostics():nnet-adjust-priors.cc:58) Adjusting priors: largest absolute difference was for pdf 78, 0.0217869 -> 0.023444
-LOG (nnet-adjust-priors[5.2.88~1392-cc246]:PrintPriorDiagnostics():nnet-adjust-priors.cc:61) Adjusting priors: K-L divergence from old to new is 0.00818426
-LOG (nnet-adjust-priors[5.2.88~1392-cc246]:main():nnet-adjust-priors.cc:137) Modified priors of neural network model and wrote it to exp/nnet/final.mdl
-# Accounting: time=0 threads=1
-# Ended (code 0) at Sat Sep 29 00:34:20 KST 2018, elapsed time 0 seconds
